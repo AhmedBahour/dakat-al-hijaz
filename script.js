@@ -155,18 +155,33 @@ function initViewsStage() {
     });
   });
 
+  function openViewLightbox(url, caption) {
+    const lightbox = document.getElementById('lightboxModal');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    if (lightbox && lightboxImg) {
+      lightboxImg.src = url || currentImgUrl;
+      if (lightboxCaption) lightboxCaption.textContent = caption || currentCaption;
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
   if (stageZoomBtn) {
-    stageZoomBtn.addEventListener('click', () => {
-      const lightbox = document.getElementById('lightboxModal');
-      const lightboxImg = document.getElementById('lightboxImg');
-      const lightboxCaption = document.getElementById('lightboxCaption');
-      if (lightbox && lightboxImg) {
-        lightboxImg.src = currentImgUrl;
-        if (lightboxCaption) lightboxCaption.textContent = currentCaption;
-        lightbox.classList.add('open');
-        lightbox.setAttribute('aria-hidden', 'false');
-        document.body.style.overflow = 'hidden';
-      }
+    stageZoomBtn.addEventListener('click', () => openViewLightbox());
+  }
+
+  const stageZoomFloatBtn = document.getElementById('stageZoomFloatBtn');
+  if (stageZoomFloatBtn) {
+    stageZoomFloatBtn.addEventListener('click', () => openViewLightbox());
+  }
+
+  const signboardPhoto = document.getElementById('signboardPhoto');
+  if (signboardPhoto) {
+    signboardPhoto.style.cursor = 'pointer';
+    signboardPhoto.addEventListener('click', () => {
+      openViewLightbox('assets/images/cafe-exterior-sign.jpg', 'لافتة ومدخل مقهى دكة الحجاز في سوق العلوي');
     });
   }
 

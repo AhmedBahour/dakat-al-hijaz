@@ -228,24 +228,25 @@
           </p>
         </div>
 
-        <!-- Master Interactive Viewport -->
+        <!-- Master Interactive Viewport (Complete Uncropped View) -->
         <div class="views-interactive-stage">
           <div class="views-main-display" id="viewsMainDisplay">
             <div class="stage-image-container">
               <img src="assets/images/seating-heritage-view.jpg" alt="إطلالة رواشين دكة الحجاز على سوق العلوي" id="stageMainImage" class="stage-img" />
-              <div class="stage-gradient-overlay"></div>
-              <div class="stage-content-box">
-                <span class="stage-badge" id="stageBadge">الإطلالة الرئيسية الأكثر طلباً</span>
-                <h3 id="stageTitle">إطلالة الرواشين على زقاق سوق العلوي</h3>
-                <p id="stageDesc">جلسة أيقونية بجوار النوافذ الخشبية العتيقة تمنحك منظراً بانورامياً حياً على حركة البلد التاريخية وتفاصيل العمارة الحجازية الأصيلة.</p>
-                <div class="stage-actions">
-                  <button type="button" class="btn btn-luxury btn-sm" id="stageZoomBtn">
-                    <span>تكبير الصورة بكامل الدقة 🔍</span>
-                  </button>
-                  <button type="button" class="btn btn-glass btn-sm" id="stageBookSeatBtn">
-                    <span>حجز هذه الجلسة 📅</span>
-                  </button>
-                </div>
+              <span class="stage-badge" id="stageBadge">الإطلالة الرئيسية الأكثر طلباً</span>
+              <button type="button" class="stage-zoom-float-btn" id="stageZoomFloatBtn" title="تكبير الصورة بكامل الدقة">🔍</button>
+            </div>
+            
+            <div class="stage-content-box">
+              <h3 id="stageTitle">إطلالة الرواشين على زقاق سوق العلوي</h3>
+              <p id="stageDesc">جلسة أيقونية بجوار النوافذ الخشبية العتيقة تمنحك منظراً بانورامياً حياً على حركة البلد التاريخية وتفاصيل العمارة الحجازية الأصيلة.</p>
+              <div class="stage-actions">
+                <button type="button" class="btn btn-luxury btn-sm" id="stageZoomBtn">
+                  <span>تكبير الصورة بكامل الدقة 🔍</span>
+                </button>
+                <button type="button" class="btn btn-glass btn-sm" id="stageBookSeatBtn">
+                  <span>حجز هذه الجلسة 📅</span>
+                </button>
               </div>
             </div>
           </div>
@@ -937,38 +938,27 @@
             </div>
           </div>
 
-          <!-- Interactive Visual Map Card with Real Signboard Photo -->
+          <!-- Landmark Signboard Showcase Card (Complete Uncropped Photo) -->
           <div class="visual-map-panel">
-            <div class="styled-map-card">
-              <img src="assets/images/cafe-exterior-sign.jpg" alt="لافتة ومدخل مقهى دكة الحجاز في سوق العلوي" class="map-real-photo" id="signboardPhoto" />
-              <div class="map-photo-overlay"></div>
-
-              <div class="map-header-badge">
-                <span class="badge-dot"></span>
-                <span>لافتة ومدخل المقهى في سوق العلوي</span>
+            <div class="styled-map-card signboard-card">
+              <div class="signboard-img-container">
+                <img src="assets/images/cafe-exterior-sign.jpg" alt="لافتة ومدخل مقهى دكة الحجاز في سوق العلوي" class="map-real-photo" id="signboardPhoto" />
+                <div class="map-header-badge">
+                  <span class="badge-dot"></span>
+                  <span>لافتة ومدخل المقهى في سوق العلوي</span>
+                </div>
               </div>
 
-              <!-- Animated Pin at Destination -->
-              <div class="map-destination-marker">
-                <div class="marker-pulse-ring"></div>
-                <div class="marker-pin">⌖</div>
-                <div class="marker-tooltip">
-                  <div class="marker-logo">
+              <div class="signboard-details-bar">
+                <div class="signboard-brand-info">
+                  <div class="signboard-brand-logo">
                     <img src="logo.jpg" alt="دكة الحجاز" />
                   </div>
                   <div>
                     <strong>مقهى دكّة الحجاز</strong>
-                    <small>سوق العلوي · جدة التاريخية</small>
+                    <small>سوق العلوي · جدة التاريخية (21.4883° N, 39.1865° E)</small>
                   </div>
                 </div>
-              </div>
-
-              <!-- Map Overlay Landmarks -->
-              <div class="landmark-tag landmark-alawi">سوق العلوي التاريخي</div>
-              <div class="landmark-tag landmark-balad">حي البلد التراثي</div>
-
-              <div class="map-footer-coords">
-                <span>الإحداثيات: 21.4883° N, 39.1865° E</span>
                 <a href="https://www.google.com/maps/search/?api=1&query=F5MP%2BMX3%2C%20Souq%20Al%20Alawi%2C%20Jeddah" target="_blank" class="map-direct-link">
                   بدء التوجيه المباشر ↗
                 </a>
