@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f110b" />
+      <stop offset="100%" stop-color="#3d2317" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fad99f" />
+      <stop offset="50%" stop-color="#d4a359" />
+      <stop offset="100%" stop-color="#b07d38" />
+    </linearGradient>
+  </defs>
+  <!-- Background with rounded corners -->
+  <rect width="128" height="128" rx="32" fill="url(#bgGrad)" stroke="#d4a359" stroke-width="2.5" />
+  
+  <!-- Outer decorative circle ring -->
+  <circle cx="64" cy="64" r="50" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.6"/>
+  <circle cx="64" cy="64" r="45" fill="none" stroke="#d4a359" stroke-width="1.2" opacity="0.8"/>
+  
+  <!-- Traditional Hijazi Arch / Rawshan outline -->
+  <path d="M 44 86 L 44 56 C 44 42 64 34 64 34 C 64 34 84 42 84 56 L 84 86 Z" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-linejoin="round" opacity="0.45"/>
+  
+  <!-- Arabic Calligraphy letter "دكة" inspired mark -->
+  <text x="64" y="78" text-anchor="middle" font-family="'Cairo', 'Amiri', 'Traditional Arabic', serif" font-weight="bold" font-size="52" fill="url(#goldGrad)" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.5))">د</text>
+  
+  <!-- Small coffee steam / star accent -->
+  <circle cx="64" cy="30" r="3" fill="#fad99f" />
+</svg>
