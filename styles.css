@@ -1220,6 +1220,17 @@ ul, ol {
   transform: scale(1.08);
 }
 
+.menu-card-media.product-photo-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background: #120a06;
+}
+
+.menu-card-media.product-photo-pair img {
+  min-width: 0;
+}
+
 .item-badge {
   position: absolute;
   top: 12px;
@@ -1388,6 +1399,7 @@ ul, ol {
 
 .apple-pay-mark {
   min-width: 106px;
+  border: 0;
   padding: 13px 16px;
   border-radius: 12px;
   background: #000;
@@ -1397,6 +1409,8 @@ ul, ol {
   font-weight: 700;
   direction: ltr;
   text-align: center;
+  cursor: not-allowed;
+  opacity: 0.92;
 }
 
 .apple-pay-kicker {
@@ -1425,6 +1439,11 @@ ul, ol {
   font-size: 0.74rem;
   font-weight: 800;
   white-space: nowrap;
+}
+
+.payment-secure.pending {
+  color: #854d0e;
+  background: #fef3c7;
 }
 
 /* -------------------- 11. EXPERIENCE SHOWCASE -------------------- */
