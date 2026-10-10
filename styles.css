@@ -524,9 +524,11 @@ ul, ol {
 .hero-overlay-gradient {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 75% 30%, rgba(212, 163, 89, 0.12) 0%, transparent 60%),
-              radial-gradient(circle at 20% 70%, rgba(194, 89, 63, 0.08) 0%, transparent 50%),
-              linear-gradient(180deg, #120a06 0%, #160c07 100%);
+  background: 
+    radial-gradient(circle at 75% 30%, rgba(212, 163, 89, 0.18) 0%, transparent 60%),
+    radial-gradient(circle at 20% 70%, rgba(194, 89, 63, 0.12) 0%, transparent 50%),
+    linear-gradient(180deg, rgba(14, 7, 4, 0.84) 0%, rgba(22, 12, 7, 0.94) 100%),
+    url('assets/images/cafe-heritage-facade.jpg') center/cover no-repeat;
 }
 
 .hero-glow-sphere {
@@ -1028,6 +1030,41 @@ ul, ol {
   border-color: var(--gold-400);
 }
 
+.story-card-visual {
+  height: 200px;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 22px;
+  border: 1px solid rgba(212, 163, 89, 0.25);
+  position: relative;
+  background: #150b07;
+}
+
+.story-card-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.story-card:hover .story-card-visual img {
+  transform: scale(1.08);
+}
+
+.visual-tag {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(14, 7, 4, 0.85);
+  border: 1px solid rgba(212, 163, 89, 0.35);
+  color: var(--gold-300);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 99px;
+  backdrop-filter: blur(8px);
+}
+
 .story-card.featured {
   background: linear-gradient(180deg, #331d13 0%, #20110a 100%);
   border-color: rgba(212, 163, 89, 0.45);
@@ -1383,67 +1420,410 @@ ul, ol {
   color: var(--cream-200);
 }
 
+/* Luxury Interactive Apple Pay Banner */
 .apple-pay-banner {
-  margin-top: 18px;
-  padding: 24px 30px;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  margin-top: 32px;
+  padding: 26px 32px;
+  display: flex;
   align-items: center;
-  gap: 22px;
-  color: #111;
-  background: linear-gradient(135deg, #fff 0%, #f3eee8 100%);
-  border: 1px solid rgba(255, 255, 255, 0.75);
-  border-radius: 18px;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
+  justify-content: space-between;
+  gap: 24px;
+  color: #fff;
+  background: linear-gradient(135deg, rgba(31, 17, 11, 0.95) 0%, rgba(20, 10, 6, 0.98) 100%);
+  border: 1px solid rgba(212, 163, 89, 0.35);
+  border-radius: 20px;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  position: relative;
+  overflow: hidden;
 }
 
-.apple-pay-mark {
-  min-width: 106px;
-  border: 0;
-  padding: 13px 16px;
-  border-radius: 12px;
+.apple-pay-banner::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(212, 163, 89, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.apple-pay-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.apple-pay-mark.interactive-apple-pay {
+  min-width: 130px;
+  height: 52px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0 24px;
+  border-radius: 99px;
   background: #000;
   color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 1.7rem;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  font-size: 1.35rem;
   font-weight: 700;
   direction: ltr;
-  text-align: center;
-  cursor: not-allowed;
-  opacity: 0.92;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.apple-pay-mark.interactive-apple-pay:hover {
+  background: #111;
+  border-color: var(--gold-400);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(212, 163, 89, 0.35);
+}
+
+.apple-logo-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.apple-pay-tooltip {
+  font-size: 0.72rem;
+  color: var(--gold-300);
+  font-weight: 600;
+}
+
+.apple-pay-copy {
+  flex-grow: 1;
+}
+
+.apple-pay-tags {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
 }
 
 .apple-pay-kicker {
-  display: block;
-  color: #7c5a35;
+  color: var(--gold-400);
   font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.04em;
 }
 
+.apple-pay-status-pill {
+  background: rgba(46, 204, 113, 0.15);
+  color: #2ecc71;
+  border: 1px solid rgba(46, 204, 113, 0.35);
+  padding: 2px 10px;
+  border-radius: 99px;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
 .apple-pay-copy h3 {
-  margin: 3px 0 4px;
-  font-size: 1.15rem;
+  margin: 2px 0 6px;
+  font-size: 1.25rem;
+  color: #fff;
 }
 
 .apple-pay-copy p {
-  color: #615a54;
-  font-size: 0.86rem;
+  color: var(--cream-200);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  max-width: 620px;
 }
 
-.payment-secure {
-  padding: 8px 13px;
-  color: #166534;
-  background: #dcfce7;
+.btn-apple-demo {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--gold-400);
+  color: #fff;
   border-radius: 99px;
-  font-size: 0.74rem;
-  font-weight: 800;
+  padding: 12px 22px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
   white-space: nowrap;
+  transition: all 0.25s ease;
+  flex-shrink: 0;
 }
 
-.payment-secure.pending {
-  color: #854d0e;
-  background: #fef3c7;
+.btn-apple-demo:hover {
+  background: var(--gold-gradient);
+  color: #120a06;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(212, 163, 89, 0.3);
+}
+
+/* Apple Maps Button in Location */
+.btn-nav-map {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-apple-maps {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  border-radius: 99px;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.25s ease;
+}
+
+.btn-apple-maps:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.btn-apple-maps .apple-icon {
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+/* Apple Pay Sheet Modal */
+.apple-pay-dialog {
+  background: #141414;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 28px;
+  max-width: 480px;
+  color: #fff;
+  padding: 28px;
+}
+
+.apple-pay-sheet-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.apple-pay-logo {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.apple-pay-merchant-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 14px 18px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.merchant-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.merchant-logo-frame {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid var(--gold-400);
+  background: #E6E2D8;
+}
+
+.merchant-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.merchant-badge h4 {
+  font-size: 1.05rem;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.merchant-badge span {
+  font-size: 0.75rem;
+  color: var(--gold-400);
+}
+
+.pay-amount {
+  text-align: left;
+  direction: ltr;
+}
+
+.pay-amount .currency {
+  font-size: 0.85rem;
+  color: var(--cream-200);
+  margin-right: 4px;
+}
+
+.pay-amount .val {
+  font-size: 1.65rem;
+  font-weight: 800;
+  color: #fff;
+  font-family: var(--font-num);
+}
+
+.apple-pay-items-list {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 14px;
+  padding: 14px 18px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.pay-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 0.88rem;
+  color: var(--cream-200);
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+}
+
+.pay-item-row.total-row {
+  border-bottom: none;
+  padding-top: 12px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.total-price {
+  color: var(--gold-300);
+  font-family: var(--font-num);
+  font-size: 1.15rem;
+}
+
+.apple-pay-card-selector {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(212, 163, 89, 0.3);
+  padding: 12px 18px;
+  border-radius: 14px;
+  margin-bottom: 22px;
+}
+
+.card-icon {
+  font-size: 1.5rem;
+}
+
+.card-details {
+  flex-grow: 1;
+}
+
+.card-details strong {
+  display: block;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.card-details span {
+  font-size: 0.78rem;
+  color: var(--cream-300);
+}
+
+.card-check {
+  color: #2ecc71;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.btn-apple-pay-confirm {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 16px;
+  border-radius: 99px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+  transition: all 0.25s ease;
+}
+
+.btn-apple-pay-confirm:hover {
+  background: #fff;
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.2);
+}
+
+.face-id-icon {
+  font-size: 1.35rem;
+}
+
+.apple-pay-disclaimer {
+  font-size: 0.75rem;
+  color: var(--cream-300);
+  text-align: center;
+  margin-top: 12px;
+  line-height: 1.5;
+}
+
+.apple-pay-success-view {
+  text-align: center;
+  padding: 15px 0 5px;
+}
+
+.apple-pay-success-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #2ecc71;
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  box-shadow: 0 0 25px rgba(46, 204, 113, 0.5);
+  animation: modal-pop 0.4s ease;
+}
+
+.apple-pay-success-view h3 {
+  font-size: 1.35rem;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.apple-pay-success-view p {
+  font-size: 0.88rem;
+  color: var(--cream-200);
+  margin-bottom: 22px;
+  line-height: 1.6;
+}
+
+.success-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* -------------------- 11. EXPERIENCE SHOWCASE -------------------- */
@@ -2681,12 +3061,13 @@ select.form-control option {
   }
 
   .apple-pay-banner {
-    grid-template-columns: auto 1fr;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
   }
 
-  .payment-secure {
-    grid-column: 1 / -1;
-    justify-self: start;
+  .apple-pay-tags {
+    justify-content: center;
   }
 
   .mosaic-item.item-tall {
@@ -2720,13 +3101,7 @@ select.form-control option {
   }
 
   .apple-pay-banner {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .apple-pay-mark,
-  .payment-secure {
-    justify-self: center;
+    padding: 22px 18px;
   }
 
   .hours-row {

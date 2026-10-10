@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initLiveWorkingHours();
   initMenuFilters();
   initReservationModal();
+  initApplePayDemo();
   initLightbox();
   initMobileDrawer();
   initScrollSpy();
@@ -348,3 +349,67 @@ function initScrollSpy() {
 
   sections.forEach(sec => observer.observe(sec));
 }
+
+/* --------------------------------------------------------------------------
+   8. Apple Pay Interactive Demo Experience
+   -------------------------------------------------------------------------- */
+function initApplePayDemo() {
+  const triggerBtn = document.getElementById('triggerApplePayBtn');
+  const triggerAltBtn = document.getElementById('triggerApplePayAltBtn');
+  const modal = document.getElementById('applePayModal');
+  const closeBtn = document.getElementById('applePayCloseBtn');
+  const confirmBtn = document.getElementById('confirmApplePayBtn');
+  const resetBtn = document.getElementById('resetApplePayBtn');
+  const initialView = document.getElementById('applePayInitialView');
+  const successView = document.getElementById('applePaySuccessView');
+
+  function openApplePaySheet() {
+    if (!modal) return;
+    if (initialView) initialView.style.display = 'block';
+    if (successView) successView.style.display = 'none';
+    if (confirmBtn) {
+      confirmBtn.innerHTML = '<span class="face-id-icon">🪪</span><span>تأكيد الدفع التجريبي (Touch ID / Face ID)</span>';
+      confirmBtn.disabled = false;
+    }
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeApplePaySheet() {
+    if (!modal) return;
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  }
+
+  if (triggerBtn) triggerBtn.addEventListener('click', openApplePaySheet);
+  if (triggerAltBtn) triggerAltBtn.addEventListener('click', openApplePaySheet);
+  if (closeBtn) closeBtn.addEventListener('click', closeApplePaySheet);
+  if (resetBtn) resetBtn.addEventListener('click', closeApplePaySheet);
+
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeApplePaySheet();
+    });
+  }
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal && modal.classList.contains('open')) {
+      closeApplePaySheet();
+    }
+  });
+
+  if (confirmBtn) {
+    confirmBtn.addEventListener('click', () => {
+      confirmBtn.disabled = true;
+      confirmBtn.innerHTML = '<span class="pulse-indicator"></span><span>جاري التحقق عبر Face ID...</span>';
+
+      setTimeout(() => {
+        if (initialView) initialView.style.display = 'none';
+        if (successView) successView.style.display = 'block';
+      }, 850);
+    });
+  }
+}
+
