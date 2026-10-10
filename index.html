@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#1b0f0a" />
-  <meta name="description" content="مقهى دكة الحجاز - تجربة قهوة مختصة فاخرة في قلب جدة التاريخية، سوق العلوي. اكتشف المنيو الرقمي التفاعلي، قصتنا، واحجز جلستك بين عبق التراث ورواشين البلد." />
+  <meta name="description" content="مقهى دكة الحجاز - تجربة حية في قلب جدة التاريخية (سوق العلوي). إطلالات الرواشين الخلابة، قهوة مختصة، وحلويات طازجة يومياً." />
   <meta name="keywords" content="دكة الحجاز, مقهى دكة الحجاز, كافيه جدة التاريخية, سوق العلوي, البلد جدة, قهوة مختصة جدة, كافيهات البلد" />
-  <meta property="og:title" content="مقهى دكة الحجاز | قهوة مختصة في قلب جدة التاريخية" />
-  <meta property="og:description" content="قهوتنا ترتقي معك في سوق العلوي. اكتشف المنيو التفاعلي وعش تجربة لا تُنسى بين أصالة الماضي وعصرية القهوة." />
+  <meta property="og:title" content="مقهى دكة الحجاز | إطلالات ورواشين جدة التاريخية" />
+  <meta property="og:description" content="قهوتنا ترتقي معك في سوق العلوي. تصفح منتجاتنا الطازجة وشاهد إطلالات الجلسات التراثية." />
   <meta property="og:image" content="logo.jpg" />
   <meta property="og:type" content="website" />
   
@@ -18,29 +18,13 @@
   <!-- Google Fonts: Cairo, Amiri & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
   
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <!-- Reading Progress Bar -->
   <div class="scroll-progress" id="scrollProgress"></div>
-
-  <!-- Announcement / Live Status Bar -->
-  <aside class="top-announcement" id="topAnnouncement">
-    <div class="container announcement-inner">
-      <div class="announcement-badge">
-        <span class="pulse-indicator"></span>
-        <span id="liveStatusText">جاري فحص حالة المقهى...</span>
-      </div>
-      <div class="announcement-msg">
-        <span>📍 سوق العلوي — حي البلد العتيق · جدة التاريخية</span>
-      </div>
-      <div class="announcement-actions">
-        <a href="tel:+966560742104" class="announcement-link">📞 +966 56 074 2104</a>
-      </div>
-    </div>
-  </aside>
 
   <!-- Luxury Smart Header -->
   <header class="site-header" id="siteHeader">
@@ -59,12 +43,9 @@
       <!-- Desktop Navigation -->
       <nav class="desktop-nav" aria-label="روابط الموقع الرئيسية">
         <a href="#top" class="nav-link active">الرئيسية</a>
-        <a href="#story" class="nav-link">حكايتنا</a>
-        <a href="#menu" class="nav-link">المنيو الرقمي</a>
-        <a href="#experience" class="nav-link">التجربة</a>
-        <a href="#gallery" class="nav-link">أجواء الدكة</a>
-        <a href="#reviews" class="nav-link">آراء الرواد</a>
-        <a href="#location" class="nav-link">الموقع والوصول</a>
+        <a href="#views" class="nav-link highlight-link">الإطلالات وأجواء المكان</a>
+        <a href="#menu" class="nav-link">منتجاتنا وقائمتنا</a>
+        <a href="#location" class="nav-link">الموقع وساعات العمل</a>
       </nav>
 
       <!-- Header CTAs -->
@@ -75,7 +56,7 @@
         </button>
         <a href="https://wa.me/966560742104" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="تواصل عبر الواتساب">
           <span class="btn-icon">💬</span>
-          <span>تواصل واتساب</span>
+          <span>واتساب مباشر</span>
         </a>
         <button class="mobile-toggle" id="mobileToggle" aria-label="فتح القائمة الرئيسية" aria-expanded="false">
           <span></span>
@@ -101,12 +82,9 @@
       </div>
       <nav class="mobile-nav-links">
         <a href="#top" class="mobile-nav-link active">الرئيسية</a>
-        <a href="#story" class="mobile-nav-link">حكايتنا التراثية</a>
-        <a href="#menu" class="mobile-nav-link">المنيو التفاعلي الكامل</a>
-        <a href="#experience" class="mobile-nav-link">تجربة دكة الحجاز</a>
-        <a href="#gallery" class="mobile-nav-link">معرض الأجواء</a>
-        <a href="#reviews" class="mobile-nav-link">تقييمات الزوار</a>
-        <a href="#location" class="mobile-nav-link">الموقع وساعات العمل</a>
+        <a href="#views" class="mobile-nav-link highlight-link">🪟 الإطلالات وأجواء المكان</a>
+        <a href="#menu" class="mobile-nav-link">☕ منتجاتنا وقائمتنا</a>
+        <a href="#location" class="mobile-nav-link">📍 الموقع وساعات العمل</a>
       </nav>
       <div class="mobile-drawer-footer">
         <button type="button" class="btn btn-primary btn-block" id="mobileReserveBtn">
@@ -126,7 +104,6 @@
         <div class="hero-overlay-gradient"></div>
         <div class="hero-glow-sphere one"></div>
         <div class="hero-glow-sphere two"></div>
-        <div class="hero-pattern-grid"></div>
       </div>
 
       <div class="container hero-grid">
@@ -136,7 +113,10 @@
             <span class="badge-icon">🏛️</span>
             <span>في قلب جدة التاريخية — سوق العلوي</span>
             <span class="badge-dot"></span>
-            <span class="badge-tag">تراث وعصرية</span>
+            <span id="heroLiveStatusPill" class="live-status-chip">
+              <span class="status-indicator-dot"></span>
+              <span id="heroLiveStatusText">مفتوح الآن نرحب بكم</span>
+            </span>
           </div>
 
           <h1 class="hero-title animate-fade-up">
@@ -145,45 +125,47 @@
           </h1>
 
           <p class="hero-description animate-fade-up delay-1">
-            في قلب سوق العلوي بجدة التاريخية، تأتي <strong>دكة الحجاز</strong> لتصنع لحظتك الاستثنائية. نجمع بين أصالة البيت الحجازي العتيق وأرقى معايير القهوة المختصة المحضرة بشغف وإتقان.
+            في سوق العلوي التراثي، نجمع أصالة البيت الحجازي العتيق وإطلالات الرواشين الخلابة مع أشهى الحلويات المحضرة طازجة وأرقى كاسات القهوة المختصة.
           </p>
 
           <div class="hero-cta-group animate-fade-up delay-2">
-            <a href="#menu" class="btn btn-luxury">
-              <span>استكشف المنيو الرقمي</span>
-              <span class="btn-arrow">↓</span>
+            <a href="#views" class="btn btn-luxury">
+              <span>استكشف الإطلالات والجلسات</span>
+              <span class="btn-arrow">🪟</span>
             </a>
-            <button type="button" class="btn btn-glass" id="heroBookBtn">
-              <span>احجز جلستك بالدكة</span>
+            <a href="#menu" class="btn btn-glass">
+              <span>منتجاتنا وقائمتنا الخاصة</span>
               <span class="btn-icon">☕</span>
-            </button>
+            </a>
             <a href="#location" class="btn btn-link">
-              <span>الموقع والاتجاهات ↗</span>
+              <span>الموقع والوصول ↗</span>
             </a>
           </div>
 
-          <!-- Trust & Stats Counter -->
+          <!-- Feature Highlights Bar -->
           <div class="hero-stats animate-fade-up delay-3">
             <div class="stat-item">
               <div class="stat-number">
-                <span class="stat-value">4.8</span>
-                <span class="stat-stars">★★★★★</span>
+                <span class="stat-value">إطلالة حية</span>
+                <span class="stat-sub-tag">رواشين أصلية</span>
               </div>
-              <div class="stat-label">تقييم الزوار على خرائط جوجل</div>
+              <div class="stat-label">نوافذ تراثية مطلة على أزقة البلد</div>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
               <div class="stat-number">
-                <span class="stat-value">100%</span>
+                <span class="stat-value">حلويات طازجة</span>
+                <span class="stat-sub-tag">يومياً</span>
               </div>
-              <div class="stat-label">محاصيل بن مختصة معتمدة</div>
+              <div class="stat-label">تيراميسو، كوكيز سكيلت، وتشيزكيك</div>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
               <div class="stat-number">
                 <span class="stat-value">سوق العلوي</span>
+                <span class="stat-sub-tag">جدة التاريخية</span>
               </div>
-              <div class="stat-label">جلسات داخلية مكيفة وخارجية</div>
+              <div class="stat-label">جلسات داخلية مكيفة وخارجية دافئة</div>
             </div>
           </div>
         </div>
@@ -194,20 +176,20 @@
             <div class="logo-ambient-light"></div>
             
             <div class="logo-card-header">
-              <span class="logo-card-chip">الهوية الرسمية المعتمدة</span>
+              <span class="logo-card-chip">الهوية التراثية الرسمية</span>
               <span class="logo-card-code">JED · 2026</span>
             </div>
 
             <!-- Showcasing the real logo -->
             <div class="logo-artwork-wrapper">
-              <img src="logo.jpg" alt="لوجو مقهى دكة الحجاز الرسمي - رسم الرواشين التاريخية والخط التراثي" class="hero-main-logo" />
+              <img src="logo.jpg" alt="لوجو مقهى دكة الحجاز الرسمي" class="hero-main-logo" />
               <div class="logo-reflection"></div>
             </div>
 
             <div class="logo-card-footer">
               <div class="logo-titles">
                 <h3>مقهى دكّة الحجاز</h3>
-                <p>DAKAT AL HIJAZ COFFEE</p>
+                <p>DAKAT AL HIJAZ · SOUQ AL-ALAWI</p>
               </div>
               <div class="logo-stamp">
                 <div class="stamp-inner">
@@ -217,141 +199,155 @@
               </div>
             </div>
 
-            <!-- Floating Live Status Indicator -->
-            <div class="floating-status-pill" id="heroStatusPill">
-              <span class="status-dot"></span>
-              <span class="status-title" id="heroStatusText">مفتوح الآن — نرحب بزيارتكم</span>
-            </div>
-
-            <!-- Floating Coffee Steam Feature -->
             <div class="floating-feature-tag tag-top">
-              <span>☕ تجربة قهوة لا تُنسى</span>
+              <span>🪟 إطلالة خلابة على أزقة البلد</span>
             </div>
             <div class="floating-feature-tag tag-bottom">
-              <span>🪟 إطلالة على أزقة التاريخ</span>
+              <span>☕ محاصيل بن مختصة معتمدة</span>
             </div>
           </div>
         </div>
       </div>
-
-      <!-- Scroll Down Indicator -->
-      <a href="#story" class="scroll-down-cue" aria-label="الانتقال للأسفل">
-        <span class="mouse-icon">
-          <span class="wheel"></span>
-        </span>
-        <span class="cue-text">اكتشف تفاصيل الحكاية</span>
-      </a>
     </section>
 
-    <!-- ==================== STORY & HERITAGE ==================== -->
-    <section class="section story-section" id="story">
+    <!-- ==================== VIEWS & AMBIENCE SHOWCASE (FRONTLINE FEATURE) ==================== -->
+    <section class="section views-showcase-section" id="views">
       <div class="container">
         <div class="section-header text-center">
           <div class="section-tag">
             <span class="tag-line"></span>
-            <span>01 · الحكاية والأصالة</span>
+            <span>01 · إطلالات وأجواء المكان الحقيقية</span>
             <span class="tag-line"></span>
           </div>
           <h2 class="section-title">
-            مكانٌ يُرتشف على مهل..<br />
-            <em>في قلب جدة التاريخية</em>
+            نوافذ تحكي التاريخ..<br />
+            <em>إطلالات دكّة الحجاز كما هي في الواقع</em>
           </h2>
           <p class="section-subtitle">
-            لسنا مجرد مقهى، بل محطة تجمع بين عبق الماضي التليد وإيقاع الحاضر الأنيق.
+            شاهد زوايا المقهى وإطلالات النوافذ الخشبية التراثية على سوق العلوي، مع جلسات مريحة تغمرها إضاءة النهار الطبيعية.
           </p>
         </div>
 
-        <div class="story-grid">
-          <!-- Story Card 1 -->
-          <div class="story-card">
-            <div class="story-card-visual">
-              <img src="assets/images/cafe-heritage-facade.jpg" alt="واجهة مبنى دكة الحجاز ورواشين جدة التاريخية" loading="lazy" />
-              <span class="visual-tag">سوق العلوي</span>
+        <!-- Master Interactive Viewport -->
+        <div class="views-interactive-stage">
+          <div class="views-main-display" id="viewsMainDisplay">
+            <div class="stage-image-container">
+              <img src="assets/images/seating-heritage-view.jpg" alt="إطلالة رواشين دكة الحجاز على سوق العلوي" id="stageMainImage" class="stage-img" />
+              <div class="stage-gradient-overlay"></div>
+              <div class="stage-content-box">
+                <span class="stage-badge" id="stageBadge">الإطلالة الرئيسية الأكثر طلباً</span>
+                <h3 id="stageTitle">إطلالة الرواشين على زقاق سوق العلوي</h3>
+                <p id="stageDesc">جلسة أيقونية بجوار النوافذ الخشبية العتيقة تمنحك منظراً بانورامياً حياً على حركة البلد التاريخية وتفاصيل العمارة الحجازية الأصيلة.</p>
+                <div class="stage-actions">
+                  <button type="button" class="btn btn-luxury btn-sm" id="stageZoomBtn">
+                    <span>تكبير الصورة بكامل الدقة 🔍</span>
+                  </button>
+                  <button type="button" class="btn btn-glass btn-sm" id="stageBookSeatBtn">
+                    <span>حجز هذه الجلسة 📅</span>
+                  </button>
+                </div>
+              </div>
             </div>
-            <div class="story-card-icon">🏛️</div>
-            <div class="story-card-number">01</div>
-            <h3 class="story-card-title">عراقة الرواشين وسوق العلوي</h3>
-            <p class="story-card-text">
-              يقع مقهانا في أحد أقدم وأعرق أسواق جدة التاريخية، حيث تحيط بك جدران الحجر المنقبي ورواشين الخشب الساج التي تروي حكايات الماضي العريق في كل زاوية.
-            </p>
-            <div class="story-card-highlight">موقع تراثي أصيل في قلب البلد</div>
           </div>
 
-          <!-- Story Card 2 -->
-          <div class="story-card featured">
-            <div class="story-card-visual">
-              <img src="assets/images/arabic-coffee-pot.jpg" alt="دلة القهوة الحجازية والضيافة الأصيلة" loading="lazy" />
-              <span class="visual-tag">توقيع الدكة</span>
+          <!-- Views Gallery Selector Cards (Full Portrait 3:4 Ratios - No Cropping!) -->
+          <div class="views-cards-grid">
+            <!-- View Card 1 -->
+            <div class="view-card active" data-img="assets/images/seating-heritage-view.jpg" data-title="إطلالة الرواشين على زقاق سوق العلوي" data-desc="جلسة أيقونية بجوار النوافذ الخشبية العتيقة تمنحك منظراً بانورامياً حياً على حركة البلد التاريخية وتفاصيل العمارة الحجازية الأصيلة." data-badge="الإطلالة الرئيسية الأكثر طلباً">
+              <div class="view-card-img-wrap">
+                <img src="assets/images/seating-heritage-view.jpg" alt="إطلالة الرواشين التراثية" loading="lazy" />
+                <span class="view-tag">إطلالة الشارع</span>
+              </div>
+              <div class="view-card-info">
+                <h4>إطلالة الرواشين على زقاق البلد</h4>
+                <p>نافذة تراثية مباشرة على قلب سوق العلوي</p>
+              </div>
             </div>
-            <div class="story-card-badge">قلب التجربة</div>
-            <div class="story-card-icon">☕</div>
-            <div class="story-card-number">02</div>
-            <h3 class="story-card-title">فلسفة القهوة المختصة والضيافة</h3>
-            <p class="story-card-text">
-              نجمع بين دلة القهوة الحجازية المتبلة بالهيل والزعفران، وأرقى محاصيل البن المختص المقطر، لنصنع تناغماً ساحراً بين أصالة الكرم الحجازي واحترافية الباريستا.
-            </p>
-            <div class="story-card-highlight">محاصيل مختصة وضيافة حجازية حقيقية</div>
-          </div>
 
-          <!-- Story Card 3 -->
-          <div class="story-card">
-            <div class="story-card-visual">
-              <img src="assets/images/cafe-exterior-sign.jpg" alt="لافتة دكة الحجاز في أزقة البلد العتيقة" loading="lazy" />
-              <span class="visual-tag">نبض البلد</span>
+            <!-- View Card 2 -->
+            <div class="view-card" data-img="assets/images/seating-green-corner.jpg" data-title="الزاوية الخضراء وجلسات النوافذ المضيئة" data-desc="جلسات مريحة تجمع بين دفء الخشب الحجازي والنباتات الخضراء، وتغمرها إضاءة النهار الطبيعية لأجواء مثالية للقراءة والحديث الهادئ." data-badge="هدوء وأناقة">
+              <div class="view-card-img-wrap">
+                <img src="assets/images/seating-green-corner.jpg" alt="الزاوية الخضراء وجلسات النوافذ" loading="lazy" />
+                <span class="view-tag">الركن الأخضر</span>
+              </div>
+              <div class="view-card-info">
+                <h4>الركن الأخضر والنوافذ المضيئة</h4>
+                <p>نباتات طبيعية وإضاءة نهار هادئة</p>
+              </div>
             </div>
-            <div class="story-card-icon">🛋️</div>
-            <div class="story-card-number">03</div>
-            <h3 class="story-card-title">حميمية الدكّة وجلسات الألفة</h3>
-            <p class="story-card-text">
-              "الدكة" في التراث الحجازي هي ملتقى الأحبة وتبادل الأحاديث الدافئة. صممنا جلساتنا بنوافذ تراثية مطلة وإضاءات هادئة لتكون ملاذك الأول للراحة والاستمتاع.
-            </p>
-            <div class="story-card-highlight">جلسات داخلية مكيفة وإطلالات تراثية</div>
-          </div>
-        </div>
 
-        <!-- Quote Banner -->
-        <div class="heritage-quote-banner">
-          <div class="quote-symbol">❝</div>
-          <blockquote class="quote-text">
-            "قهوتنا ترتقي معك! كل رشفة، ابتسامة، وصورة تلتقطها بين زوايانا هي إلهام مستمر لنا لنقدم الأجمل دائماً."
-          </blockquote>
-          <cite class="quote-author">— فريق مقهى دكة الحجاز · جدة البلد</cite>
+            <!-- View Card 3 -->
+            <div class="view-card" data-img="assets/images/seating-sunlit.jpg" data-title="جلسات النهار وأشعة الشمس الذهبية" data-desc="تنساب أشعة الشمس عبر النوافذ الخشبية لتلقي دفئاً خاصاً على الجلسات الداخلية والأسقف التراثية، لتستمتع بفنجان قهوة الصباح والظهيرة." data-badge="أجواء مشمسة">
+              <div class="view-card-img-wrap">
+                <img src="assets/images/seating-sunlit.jpg" alt="جلسات النهار المشمسة" loading="lazy" />
+                <span class="view-tag">إضاءة طبيعية</span>
+              </div>
+              <div class="view-card-info">
+                <h4>جلسات النهار وأشعة الشمس</h4>
+                <p>دفء الضوء والأسقف التراثية</p>
+              </div>
+            </div>
+
+            <!-- View Card 4 -->
+            <div class="view-card" data-img="assets/images/cafe-heritage-facade.jpg" data-title="واجهة المبنى التراثي ورواشينه العتيقة" data-desc="مبنى شاهق من الحجر المنقبي ورواشين خشب الساج التي صمدت لعقود طويلة، ليكون مقهى دكة الحجاز امتداداً حياً لتاريخ عروس البحر الأحمر." data-badge="تراث حجازي عريق">
+              <div class="view-card-img-wrap">
+                <img src="assets/images/cafe-heritage-facade.jpg" alt="واجهة المبنى التراثي" loading="lazy" />
+                <span class="view-tag">عمارة البلد</span>
+              </div>
+              <div class="view-card-info">
+                <h4>واجهة المبنى التاريخي ورواشينه</h4>
+                <p>عمارة الحجر المنقبي ورواشين الأجداد</p>
+              </div>
+            </div>
+
+            <!-- View Card 5 -->
+            <div class="view-card" data-img="assets/images/cafe-exterior-sign.jpg" data-title="مدخل المقهى ولافتته في سوق العلوي" data-desc="اللافتة التراثية لدكة الحجاز ترحب بزوّار سوق العلوي من أهالي جدة وضيوفها وسياحها القادمين لاستكشاف عبق التاريخ وضيافة القهوة." data-badge="سوق العلوي">
+              <div class="view-card-img-wrap">
+                <img src="assets/images/cafe-exterior-sign.jpg" alt="لافتة ومدخل دكة الحجاز" loading="lazy" />
+                <span class="view-tag">مدخل الدكة</span>
+              </div>
+              <div class="view-card-info">
+                <h4>لافتة المقهى ومدخل سوق العلوي</h4>
+                <p>نقطة اللقاء والترحيب بزوار جدة</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== INTERACTIVE DIGITAL MENU ==================== -->
+    <!-- ==================== REAL PRODUCTS FIRST & DIGITAL MENU ==================== -->
     <section class="section menu-section" id="menu">
       <div class="container">
         <div class="section-header">
           <div class="section-tag">
             <span class="tag-line"></span>
-            <span>02 · قائمة المشروبات والمأكولات</span>
+            <span>02 · منتجاتنا الخاصة وقائمتنا الرقمية</span>
           </div>
           <div class="menu-head-flex">
             <div>
               <h2 class="section-title">
-                منيو <em>دكّة الحجاز</em> التفاعلي
+                منتجات <em>دكّة الحجاز</em> الخاصة أولاً
               </h2>
               <p class="section-subtitle">
-                تصفح اختياراتنا بعناية، تعرف على المكونات والنكهات، واطلب طلبك المباشر فوراً.
+                حلويات طازجة ودلة قهوة حجازية أصلية بمكونات مختارة بعناية، تليها اختيارات القهوة المختصة والمشروبات.
               </p>
             </div>
             <div class="menu-external-actions">
               <a href="https://linktr.ee/dakathijaaz" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                <span>📄 فتح المنيو الرسمي (PDF)</span>
+                <span>📄 فتح المنيو المعتمد (PDF)</span>
                 <span>↗</span>
               </a>
             </div>
           </div>
         </div>
 
-        <!-- Filter Categories Tabs -->
+        <!-- Filter Categories Tabs (Real Products is FIRST & DEFAULT!) -->
         <div class="menu-filter-bar" role="tablist" aria-label="تصنيفات المنيو">
-          <button class="filter-tab active" data-category="all" role="tab" aria-selected="true">
+          <button class="filter-tab active" data-category="signature" role="tab" aria-selected="true">
             <span class="tab-icon">✨</span>
-            <span class="tab-text">جميع الأصناف</span>
-            <span class="tab-count">(18)</span>
+            <span class="tab-text">منتجاتنا الخاصة (الأصلية)</span>
+            <span class="tab-count">(7)</span>
           </button>
           <button class="filter-tab" data-category="hot-coffee" role="tab" aria-selected="false">
             <span class="tab-icon">☕</span>
@@ -363,63 +359,37 @@
             <span class="tab-text">المشروبات الباردة والمنعشة</span>
             <span class="tab-count">(4)</span>
           </button>
-          <button class="filter-tab" data-category="desserts" role="tab" aria-selected="false">
-            <span class="tab-icon">🍰</span>
-            <span class="tab-text">حلويات الدكة الخاصة</span>
-            <span class="tab-count">(6)</span>
-          </button>
           <button class="filter-tab" data-category="traditional" role="tab" aria-selected="false">
             <span class="tab-icon">🫖</span>
             <span class="tab-text">الشاي والمشروبات التراثية</span>
             <span class="tab-count">(3)</span>
           </button>
+          <button class="filter-tab" data-category="all" role="tab" aria-selected="false">
+            <span class="tab-icon">📋</span>
+            <span class="tab-text">جميع الأصناف</span>
+            <span class="tab-count">(18)</span>
+          </button>
         </div>
 
-        <!-- Menu Items Grid -->
+        <!-- Menu Items Grid (SHOWING OUR REAL PRODUCTS FIRST!) -->
         <div class="menu-grid" id="menuGrid">
-          <!-- Item 1: V60 Specialty -->
-          <article class="menu-card" data-category="hot-coffee">
-            <div class="menu-card-media">
-              <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=700&q=80" alt="قهوة مقطرة V60" loading="lazy" />
-              <span class="item-badge signature">توقيع الدكة</span>
-            </div>
-            <div class="menu-card-body">
-              <div class="item-header">
-                <div>
-                  <h3 class="item-title">قهوة مقطرة V60 مختصة</h3>
-                  <span class="item-title-en">Specialty V60 Drip Coffee</span>
-                </div>
-                <div class="item-price">22 <small>ر.س</small></div>
-              </div>
-              <p class="item-desc">
-                تحضير يدوي متقن بمحاصيل مختارة (إثيوبية يرقاتشيفي أو كولومبية). إيحاءات فاكهية وزهرية نقية.
-              </p>
-              <div class="item-footer">
-                <span class="item-note">مستوى التحميص: وسطي خفيف</span>
-                <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D9%82%D9%87%D9%88%D8%A9%20V60%20%D9%85%D8%AE%D8%AA%D8%B5%D8%A9" target="_blank" class="order-btn" title="طلب مباشر عبر واتساب">
-                  <span>طلب عبر واتساب</span>
-                  <i>↗</i>
-                </a>
-              </div>
-            </div>
-          </article>
 
-          <!-- Item 2: Hijazi Arabic Coffee -->
-          <article class="menu-card" data-category="hot-coffee">
-            <div class="menu-card-media">
+          <!-- REAL PRODUCT 1: Authentic Hijazi Coffee Dallah -->
+          <article class="menu-card priority-product" data-category="signature hot-coffee">
+            <div class="menu-card-media natural-ratio">
               <img src="assets/images/arabic-coffee-pot.jpg" alt="دلة القهوة الحجازية بالهيل والمستكة - دكة الحجاز" loading="lazy" />
-              <span class="item-badge popular">الأكثر طلباً</span>
+              <span class="item-badge popular">توقيع الدكة</span>
             </div>
             <div class="menu-card-body">
               <div class="item-header">
                 <div>
-                  <h3 class="item-title">القهوة الحجازية بالهيل والمستكة</h3>
-                  <span class="item-title-en">Authentic Hijazi Dallah</span>
+                  <h3 class="item-title">دلة القهوة الحجازية بالهيل والمستكة</h3>
+                  <span class="item-title-en">Authentic Hijazi Coffee Dallah</span>
                 </div>
                 <div class="item-price">28 <small>ر.س</small></div>
               </div>
               <p class="item-desc">
-                دلة قهوة شقراء متبلة بأجود أنواع الهيل الأخضر والمستكة والزعفران، تُقدم مع تمر السكري الفاخر وطحينة.
+                قهوة شقراء متبلة بأجود أنواع الهيل الأخضر والمستكة والزعفران، تُقدم مع تمر السكري الفاخر والطحينة.
               </p>
               <div class="item-footer">
                 <span class="item-note">تكفي لشخصين</span>
@@ -431,21 +401,209 @@
             </div>
           </article>
 
-          <!-- Item 3: Flat White -->
-          <article class="menu-card" data-category="hot-coffee">
-            <div class="menu-card-media">
-              <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=80" alt="فلات وايت" loading="lazy" />
+          <!-- REAL PRODUCT 2: Hot Cookie Skillet -->
+          <article class="menu-card priority-product" data-category="signature desserts">
+            <div class="menu-card-media natural-ratio">
+              <img src="assets/images/product-cookie-skillet.jpg" alt="كوكيز دكة الحجاز الساخن مع الآيس كريم" loading="lazy" />
+              <span class="item-badge popular">الأكثر طلباً</span>
             </div>
             <div class="menu-card-body">
               <div class="item-header">
                 <div>
-                  <h3 class="item-title">فلات وايت دكة</h3>
+                  <h3 class="item-title">كوكيز الدكّة الساخن بالآيس كريم</h3>
+                  <span class="item-title-en">Hot Cookie Skillet</span>
+                </div>
+                <div class="item-price">25 <small>ر.س</small></div>
+              </div>
+              <p class="item-desc">
+                كوكيز شوكولاتة طازج يُقدّم ساخناً في المقلاة مع آيس كريم الفانيليا وصوص الشوكولاتة الغني المنساب.
+              </p>
+              <div class="item-footer">
+                <span class="item-note">يُقدّم ساخناً وطازجاً</span>
+                <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D9%83%D9%88%D9%83%D9%8A%D8%B2%20%D8%A7%D9%84%D8%AF%D9%83%D8%A9%20%D8%A7%D9%84%D8%B3%D8%A7%D8%AE%D9%86" target="_blank" class="order-btn">
+                  <span>طلب عبر واتساب</span>
+                  <i>↗</i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- REAL PRODUCT 3: Specialty Tiramisu -->
+          <article class="menu-card priority-product" data-category="signature desserts">
+            <div class="menu-card-media natural-ratio">
+              <img src="assets/images/product-tiramisu.jpg" alt="تيراميسو القهوة المختصة من دكة الحجاز" loading="lazy" />
+              <span class="item-badge signature">توقيع الدكة</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="item-header">
+                <div>
+                  <h3 class="item-title">تيراميسو الإسبريسو الحجازي</h3>
+                  <span class="item-title-en">Dakka Specialty Tiramisu</span>
+                </div>
+                <div class="item-price">26 <small>ر.س</small></div>
+              </div>
+              <p class="item-desc">
+                طبقات الماسكاربوني الإيطالية الحريرية مع بسكويت ليدي فينجرز مغموس بإسبريسو دكة الحجاز ورشة كاكاو بلجيكي.
+              </p>
+              <div class="item-footer">
+                <span class="item-note">قوام كريمي فاخر</span>
+                <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AA%D9%8A%D8%B1%D8%A7%D9%85%D9%8A%D8%B3%D9%88%20%D8%A7%D9%84%D8%AF%D9%83%D8%A9" target="_blank" class="order-btn">
+                  <span>طلب عبر واتساب</span>
+                  <i>↗</i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- REAL PRODUCT 4: Tiramisu Cake -->
+          <article class="menu-card priority-product" data-category="signature desserts">
+            <div class="menu-card-media natural-ratio">
+              <img src="assets/images/product-tiramisu-cake.jpg" alt="كيكة التيراميسو الفاخرة من دكة الحجاز" loading="lazy" />
+              <span class="item-badge signature">حجم عائلي</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="item-header">
+                <div>
+                  <h3 class="item-title">كيكة التيراميسو الفاخرة</h3>
+                  <span class="item-title-en">Signature Tiramisu Cake</span>
+                </div>
+                <div class="item-price">34 <small>ر.س</small></div>
+              </div>
+              <p class="item-desc">
+                قالب تيراميسو متكامل ومُعد بحرفية بنكهة القهوة المركزة، مثالي للمشاركة والجلسات العائلية في الدكة.
+              </p>
+              <div class="item-footer">
+                <span class="item-note">مثالية للمشاركة</span>
+                <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D9%83%D9%8A%D9%83%D8%A9%20%D8%A7%D9%84%D8%AA%D9%8A%D8%B1%D8%A7%D9%85%D9%8A%D8%B3%D9%88" target="_blank" class="order-btn">
+                  <span>طلب عبر واتساب</span>
+                  <i>↗</i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- REAL PRODUCT 5: San Sebastian Cheesecake -->
+          <article class="menu-card priority-product" data-category="signature desserts">
+            <div class="menu-card-media natural-ratio">
+              <img src="assets/images/product-san-sebastian.jpg" alt="تشيزكيك سان سباستيان من دكة الحجاز" loading="lazy" />
+              <span class="item-badge popular">الأكثر طلباً</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="item-header">
+                <div>
+                  <h3 class="item-title">تشيزكيك سان سباستيان المكرمل</h3>
+                  <span class="item-title-en">San Sebastian Cheesecake</span>
+                </div>
+                <div class="item-price">27 <small>ر.س</small></div>
+              </div>
+              <p class="item-desc">
+                تشيزكيك مخبوزة على الطريقة الإسبانية بقوام كريمي ذائب وسطح محمص ومكرمل، تُحضّر يومياً بمكونات طازجة.
+              </p>
+              <div class="item-footer">
+                <span class="item-note">مخبوزة يومياً</span>
+                <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AA%D8%B4%D9%8A%D8%B2%D9%83%D9%8A%D9%83%20%D8%B3%D8%A7%D9%86%20%D8%B3%D8%A8%D8%A7%D8%B3%D8%AA%D9%8A%D8%A7%D9%86" target="_blank" class="order-btn">
+                  <span>طلب عبر واتساب</span>
+                  <i>↗</i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- REAL PRODUCT 6: Mango Cheesecake Cup -->
+          <article class="menu-card priority-product" data-category="signature desserts">
+            <div class="menu-card-media natural-ratio">
+              <img src="assets/images/product-mango-cheesecake.jpg" alt="تشيزكيك كاسات المانجو من دكة الحجاز" loading="lazy" />
+              <span class="item-badge new">جديد منعش</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="item-header">
+                <div>
+                  <h3 class="item-title">تشيزكيك المانجو الاستوائي</h3>
+                  <span class="item-title-en">Tropical Mango Cheesecake Cup</span>
+                </div>
+                <div class="item-price">24 <small>ر.س</small></div>
+              </div>
+              <p class="item-desc">
+                كاسة تشيزكيك باردة وغنية ببيوريه المانجو الطبيعي اللذيذ، مع طبقة بسكويت مقرمشة وقوام تشيزكيك مخملي.
+              </p>
+              <div class="item-footer">
+                <span class="item-note">نكهة استوائية منعشة</span>
+                <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AA%D8%B4%D9%8A%D8%B2%D9%83%D9%8A%D9%83%20%D8%A7%D9%84%D9%85%D8%A7%D9%86%D8%AC%D9%88" target="_blank" class="order-btn">
+                  <span>طلب عبر واتساب</span>
+                  <i>↗</i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- REAL PRODUCT 7: Wild Berry Cheesecake Cup -->
+          <article class="menu-card priority-product" data-category="signature desserts">
+            <div class="menu-card-media natural-ratio">
+              <img src="assets/images/product-berry-cheesecake.jpg" alt="تشيزكيك كاسات التوت البري من دكة الحجاز" loading="lazy" />
+              <span class="item-badge new">جديد</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="item-header">
+                <div>
+                  <h3 class="item-title">تشيزكيك التوت البري المنعش</h3>
+                  <span class="item-title-en">Wild Berry Cheesecake Cup</span>
+                </div>
+                <div class="item-price">24 <small>ر.س</small></div>
+              </div>
+              <p class="item-desc">
+                كاسة تشيزكيك فردية متوازنة الحلاوة والحموضة، تعلوها حبات التوت البري وصوص التوت المركز اللذيذ.
+              </p>
+              <div class="item-footer">
+                <span class="item-note">توت بري طبيعي</span>
+                <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AA%D8%B4%D9%8A%D8%B2%D9%83%D9%8A%D9%83%20%D8%A7%D9%84%D8%AA%D9%88%D8%AA" target="_blank" class="order-btn">
+                  <span>طلب عبر واتساب</span>
+                  <i>↗</i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- OTHER DRINKS (Hot Coffee) -->
+          <article class="menu-card" data-category="hot-coffee">
+            <div class="menu-card-media">
+              <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=700&q=80" alt="قهوة مقطرة V60" loading="lazy" />
+              <span class="item-badge signature">محصول إثيوبي/كولومبي</span>
+            </div>
+            <div class="menu-card-body">
+              <div class="item-header">
+                <div>
+                  <h3 class="item-title">قهوة مقطرة V60 مختصة</h3>
+                  <span class="item-title-en">Specialty V60 Drip Coffee</span>
+                </div>
+                <div class="item-price">22 <small>ر.س</small></div>
+              </div>
+              <p class="item-desc">
+                تحضير يدوي متقن بمحاصيل مختارة ناعمة الإيحاءات الفاكهية والزهرية النقية.
+              </p>
+              <div class="item-footer">
+                <span class="item-note">تقطير يدوي طازج</span>
+                <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D9%82%D9%87%D9%88%D8%A9%20V60" target="_blank" class="order-btn">
+                  <span>طلب عبر واتساب</span>
+                  <i>↗</i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="hot-coffee">
+            <div class="menu-card-media">
+              <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=80" alt="فلات وايت دكة" loading="lazy" />
+            </div>
+            <div class="menu-card-body">
+              <div class="item-header">
+                <div>
+                  <h3 class="item-title">فلات وايت دكة الحجاز</h3>
                   <span class="item-title-en">Dakka Flat White</span>
                 </div>
                 <div class="item-price">18 <small>ر.س</small></div>
               </div>
               <p class="item-desc">
-                دبل شوت إسبريسو غني مع حليب مبخر ميكروفوم حريري وقوام كريمي متوازن يبرز نكهات القهوة.
+                دبل شوت إسبريسو غني مع حليب مبخر ميكروفوم حريري وقوام كريمي متوازن.
               </p>
               <div class="item-footer">
                 <span class="item-note">حجم: 6 أونصة</span>
@@ -457,10 +615,9 @@
             </div>
           </article>
 
-          <!-- Item 4: Cortado -->
           <article class="menu-card" data-category="hot-coffee">
             <div class="menu-card-media">
-              <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=700&q=80" alt="كورتادو" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=700&q=80" alt="كورتادو البلد" loading="lazy" />
             </div>
             <div class="menu-card-body">
               <div class="item-header">
@@ -471,10 +628,10 @@
                 <div class="item-price">16 <small>ر.س</small></div>
               </div>
               <p class="item-desc">
-                توازن متطابق 1:1 بين الإسبريسو المركز والحليب الدافئ في فنجان جبلتار الزجاجي الكلاسيكي.
+                توازن متطابق 1:1 بين الإسبريسو المركز والحليب الدافئ في فنجان زجاجي كلاسيكي.
               </p>
               <div class="item-footer">
-                <span class="item-note">قوة النكهة: مركز</span>
+                <span class="item-note">قوة نكهة مركزة</span>
                 <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D9%83%D9%88%D8%B1%D8%AA%D8%A7%D8%AF%D9%88" target="_blank" class="order-btn">
                   <span>طلب عبر واتساب</span>
                   <i>↗</i>
@@ -483,7 +640,6 @@
             </div>
           </article>
 
-          <!-- Item 5: Spanish Latte Hot -->
           <article class="menu-card" data-category="hot-coffee">
             <div class="menu-card-media">
               <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=700&q=80" alt="سبانش لاتيه حار" loading="lazy" />
@@ -501,7 +657,7 @@
               </p>
               <div class="item-footer">
                 <span class="item-note">حلاوة موزونة</span>
-                <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%B3%D8%A8%D8%A7%D9%86%D8%B4%20%D9%84%D8%A7%D8%AA%D9%8A%D9%87" target="_blank" class="order-btn">
+                <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%B3%D8%A8%D8%A7%D8%BD%D8%B4%20%D9%84%D8%A7%D8%AA%D9%8A%D9%87" target="_blank" class="order-btn">
                   <span>طلب عبر واتساب</span>
                   <i>↗</i>
                 </a>
@@ -509,7 +665,7 @@
             </div>
           </article>
 
-          <!-- Item 6: Iced Drip Coffee -->
+          <!-- Cold Drinks -->
           <article class="menu-card" data-category="cold-coffee">
             <div class="menu-card-media">
               <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=80" alt="آيس دريب مقطر" loading="lazy" />
@@ -536,7 +692,6 @@
             </div>
           </article>
 
-          <!-- Item 7: Cold Brew Aged -->
           <article class="menu-card" data-category="cold-coffee">
             <div class="menu-card-media">
               <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=80" alt="كولد برو معتق" loading="lazy" />
@@ -563,7 +718,6 @@
             </div>
           </article>
 
-          <!-- Item 8: Iced Spanish Latte -->
           <article class="menu-card" data-category="cold-coffee">
             <div class="menu-card-media">
               <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=700&q=80" alt="آيس سبانش لاتيه" loading="lazy" />
@@ -581,7 +735,7 @@
               </p>
               <div class="item-footer">
                 <span class="item-note">المشروب المفضل صيفاً</span>
-                <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%A2%D9%8A%D8%B3%20%D8%B3%D8%A8%D8%A7%D9%86%D8%B4%20%D9%84%D8%A7%D8%AA%D9%8A%D9%87" target="_blank" class="order-btn">
+                <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%A2%D9%8A%D8%B3%20%D8%B3%D8%A8%D8%A7%D8%BD%D8%B4" target="_blank" class="order-btn">
                   <span>طلب عبر واتساب</span>
                   <i>↗</i>
                 </a>
@@ -589,11 +743,10 @@
             </div>
           </article>
 
-          <!-- Item 9: Hibiscus Cooler -->
           <article class="menu-card" data-category="cold-coffee">
             <div class="menu-card-media">
               <img src="https://images.unsplash.com/photo-1556881286-fc6915169721?auto=format&fit=crop&w=700&q=80" alt="كركديه البلد المنعش" loading="lazy" />
-              <span class="item-badge new">مشروب جديد</span>
+              <span class="item-badge new">طبيعي 100%</span>
             </div>
             <div class="menu-card-body">
               <div class="item-header">
@@ -604,10 +757,10 @@
                 <div class="item-price">19 <small>ر.س</small></div>
               </div>
               <p class="item-desc">
-                مشروب كركديه محضر طبيعياً مع لمسة عصير الرمان الطازج والنعناع الفواح، خالي من الكافيين ومنعش تماماً.
+                مشروب كركديه محضر طبيعياً مع لمسة عصير الرمان والنعناع الفواح، خالي من الكافيين ومنعش تماماً.
               </p>
               <div class="item-footer">
-                <span class="item-note">طبيعي 100%</span>
+                <span class="item-note">خالي من الكافيين</span>
                 <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D9%83%D8%B1%D9%83%D8%AF%D9%8A%D9%87%20%D8%A7%D9%84%D8%A8%D9%84%D8%AF" target="_blank" class="order-btn">
                   <span>طلب عبر واتساب</span>
                   <i>↗</i>
@@ -616,169 +769,7 @@
             </div>
           </article>
 
-          <!-- Item 10: Hot Cookie Skillet -->
-          <article class="menu-card" data-category="desserts">
-            <div class="menu-card-media">
-              <img src="assets/images/product-cookie-skillet.jpg" alt="كوكيز دكة الحجاز الساخن مع الآيس كريم" loading="lazy" />
-              <span class="item-badge popular">الأكثر طلباً</span>
-            </div>
-            <div class="menu-card-body">
-              <div class="item-header">
-                <div>
-                  <h3 class="item-title">كوكيز الدكّة الساخن بالآيس كريم</h3>
-                  <span class="item-title-en">Hot Cookie Skillet</span>
-                </div>
-                <div class="item-price">25 <small>ر.س</small></div>
-              </div>
-              <p class="item-desc">
-                كوكيز شوكولاتة طازج يُقدّم ساخناً في المقلاة مع آيس كريم الفانيليا وصوص الشوكولاتة الغني المنساب.
-              </p>
-              <div class="item-footer">
-                <span class="item-note">يُقدّم ساخناً وطازجاً</span>
-                <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D9%83%D9%88%D9%83%D9%8A%D8%B2%20%D8%A7%D9%84%D8%AF%D9%83%D8%A9%20%D8%A7%D9%84%D8%B3%D8%A7%D8%AE%D9%86" target="_blank" class="order-btn">
-                  <span>طلب عبر واتساب</span>
-                  <i>↗</i>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Item 11: Specialty Tiramisu -->
-          <article class="menu-card" data-category="desserts">
-            <div class="menu-card-media">
-              <img src="assets/images/product-tiramisu.jpg" alt="تيراميسو القهوة المختصة من دكة الحجاز" loading="lazy" />
-              <span class="item-badge signature">توقيع الدكة</span>
-            </div>
-            <div class="menu-card-body">
-              <div class="item-header">
-                <div>
-                  <h3 class="item-title">تيراميسو الإسبريسو الحجازي</h3>
-                  <span class="item-title-en">Dakka Specialty Tiramisu</span>
-                </div>
-                <div class="item-price">26 <small>ر.س</small></div>
-              </div>
-              <p class="item-desc">
-                طبقات الماسكاربوني الإيطالية الحريرية مع بسكويت ليدي فينجرز مغموس بإسبريسو دكة الحجاز ورشة كاكاو بلجيكي.
-              </p>
-              <div class="item-footer">
-                <span class="item-note">قوام كريمي فاخر</span>
-                <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AA%D9%8A%D8%B1%D8%A7%D9%85%D9%8A%D8%B3%D9%88%20%D8%A7%D9%84%D8%AF%D9%83%D8%A9" target="_blank" class="order-btn">
-                  <span>طلب عبر واتساب</span>
-                  <i>↗</i>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Item 12: Tiramisu Cake -->
-          <article class="menu-card" data-category="desserts">
-            <div class="menu-card-media">
-              <img src="assets/images/product-tiramisu-cake.jpg" alt="كيكة التيراميسو الفاخرة من دكة الحجاز" loading="lazy" />
-              <span class="item-badge signature">حجم عائلي</span>
-            </div>
-            <div class="menu-card-body">
-              <div class="item-header">
-                <div>
-                  <h3 class="item-title">كيكة التيراميسو الفاخرة</h3>
-                  <span class="item-title-en">Signature Tiramisu Cake</span>
-                </div>
-                <div class="item-price">34 <small>ر.س</small></div>
-              </div>
-              <p class="item-desc">
-                قالب تيراميسو متكامل ومُعد بحرفية عالية بنكهة القهوة المركزة، مثالي للمشاركة والجلسات العائلية في الدكة.
-              </p>
-              <div class="item-footer">
-                <span class="item-note">مثالية للمشاركة</span>
-                <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D9%83%D9%8A%D9%83%D8%A9%20%D8%A7%D9%84%D8%AA%D9%8A%D8%B1%D8%A7%D9%85%D9%8A%D8%B3%D9%88" target="_blank" class="order-btn">
-                  <span>طلب عبر واتساب</span>
-                  <i>↗</i>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Item 13: San Sebastian Cheesecake -->
-          <article class="menu-card" data-category="desserts">
-            <div class="menu-card-media">
-              <img src="assets/images/product-san-sebastian.jpg" alt="تشيزكيك سان سباستيان من دكة الحجاز" loading="lazy" />
-              <span class="item-badge popular">الأكثر طلباً</span>
-            </div>
-            <div class="menu-card-body">
-              <div class="item-header">
-                <div>
-                  <h3 class="item-title">تشيزكيك سان سباستيان المكرمل</h3>
-                  <span class="item-title-en">San Sebastian Cheesecake</span>
-                </div>
-                <div class="item-price">27 <small>ر.س</small></div>
-              </div>
-              <p class="item-desc">
-                تشيزكيك مخبوزة على الطريقة الإسبانية بقوام كريمي ذائب وسطح محمص ومكرمل، تُحضّر يومياً بمكونات طازجة.
-              </p>
-              <div class="item-footer">
-                <span class="item-note">مخبوزة يومياً</span>
-                <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AA%D8%B4%D9%8A%D8%B2%D9%83%D9%8A%D9%83%20%D8%B3%D8%A7%D9%86%20%D8%B3%D8%A8%D8%A7%D8%B3%D8%AA%D9%8A%D8%A7%D9%86" target="_blank" class="order-btn">
-                  <span>طلب عبر واتساب</span>
-                  <i>↗</i>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Item 14: Mango Cheesecake Cup -->
-          <article class="menu-card" data-category="desserts">
-            <div class="menu-card-media">
-              <img src="assets/images/product-mango-cheesecake.jpg" alt="تشيزكيك كاسات المانجو من دكة الحجاز" loading="lazy" />
-              <span class="item-badge new">جديد منعش</span>
-            </div>
-            <div class="menu-card-body">
-              <div class="item-header">
-                <div>
-                  <h3 class="item-title">تشيزكيك المانجو الاستوائي</h3>
-                  <span class="item-title-en">Tropical Mango Cheesecake Cup</span>
-                </div>
-                <div class="item-price">24 <small>ر.س</small></div>
-              </div>
-              <p class="item-desc">
-                كاسة تشيزكيك باردة وغنية ببيوريه المانجو الطبيعي اللذيذ، مع طبقة بسكويت مقرمشة وقوام تشيزكيك مخملي.
-              </p>
-              <div class="item-footer">
-                <span class="item-note">نكهة استوائية منعشة</span>
-                <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AA%D8%B4%D9%8A%D8%B2%D9%83%D9%8A%D9%83%20%D8%A7%D9%84%D9%85%D8%A7%D9%86%D8%AC%D9%88" target="_blank" class="order-btn">
-                  <span>طلب عبر واتساب</span>
-                  <i>↗</i>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Item 15: Wild Berry Cheesecake Cup -->
-          <article class="menu-card" data-category="desserts">
-            <div class="menu-card-media">
-              <img src="assets/images/product-berry-cheesecake.jpg" alt="تشيزكيك كاسات التوت البري من دكة الحجاز" loading="lazy" />
-              <span class="item-badge new">جديد</span>
-            </div>
-            <div class="menu-card-body">
-              <div class="item-header">
-                <div>
-                  <h3 class="item-title">تشيزكيك التوت البري المنعش</h3>
-                  <span class="item-title-en">Wild Berry Cheesecake Cup</span>
-                </div>
-                <div class="item-price">24 <small>ر.س</small></div>
-              </div>
-              <p class="item-desc">
-                كاسة تشيزكيك فردية متوازنة الحلاوة والحموضة، تعلوها حبات التوت البري وصوص التوت المركز اللذيذ.
-              </p>
-              <div class="item-footer">
-                <span class="item-note">توت بري طبيعي</span>
-                <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AA%D8%B4%D9%8A%D8%B2%D9%83%D9%8A%D9%83%20%D8%A7%D9%84%D8%AA%D9%88%D8%AA" target="_blank" class="order-btn">
-                  <span>طلب عبر واتساب</span>
-                  <i>↗</i>
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Item 14: Hijazi Tea with Madinah Mint -->
+          <!-- Traditional Tea & Sips -->
           <article class="menu-card" data-category="traditional">
             <div class="menu-card-media">
               <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=700&q=80" alt="شاي بالنعناع المديني" loading="lazy" />
@@ -805,7 +796,6 @@
             </div>
           </article>
 
-          <!-- Item 15: Dakka Karak -->
           <article class="menu-card" data-category="traditional">
             <div class="menu-card-media">
               <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=700&q=80" alt="شاي كرك الدكة" loading="lazy" />
@@ -823,7 +813,7 @@
                 شاي أسود مطبوخ مع الحليب المبخر وخليط بهارات الزنجبيل الطازج والهيل والزعفران والقرفة.
               </p>
               <div class="item-footer">
-                <span class="item-note">دفء الشتاء والمساء</span>
+                <span class="item-note">دفء المساء الحجازي</span>
                 <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%B7%D9%84%D8%A8%20%D9%83%D8%B1%D9%83%20%D8%A7%D9%84%D8%AF%D9%83%D8%A9" target="_blank" class="order-btn">
                   <span>طلب عبر واتساب</span>
                   <i>↗</i>
@@ -832,7 +822,6 @@
             </div>
           </article>
 
-          <!-- Item 16: Traditional Sahlab -->
           <article class="menu-card" data-category="traditional">
             <div class="menu-card-media">
               <img src="https://images.unsplash.com/photo-1517578239113-b03992dcdd25?auto=format&fit=crop&w=700&q=80" alt="سحلب بالمكسرات" loading="lazy" />
@@ -859,239 +848,31 @@
           </article>
         </div>
 
-        <!-- Direct WhatsApp Order Callout -->
-        <div class="menu-callout">
-          <div class="callout-content">
-            <div class="callout-icon">💬</div>
-            <div>
-              <h3>هل لديك طلب خاص أو رغبة بتجهيز مسبق؟</h3>
-              <p>تواصل مع فريق الباريستا لدينا عبر الواتساب لتجهيز طلبك قبل وصولك أو للاستفسار عن محاصيل الأسبوع.</p>
-            </div>
-          </div>
-          <a href="https://wa.me/966560742104?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%85%D8%AD%D8%A7%D8%B5%D9%8A%D9%84%20%D9%88%D8%B7%D9%84%D8%A8%D8%A7%D8%AA%20%D8%AF%D9%83%D8%A9%20%D8%A7%D9%84%D8%AD%D8%AC%D8%A7%D8%B2" target="_blank" class="btn btn-whatsapp">
-            <span>تواصل مباشرة مع الباريستا</span>
-            <span>↗</span>
-          </a>
-        </div>
-
-        <!-- Interactive Apple Pay Showcase Card -->
+        <!-- Interactive Apple Pay Showcase Card (With Clean Vector SVG Logo!) -->
         <div class="apple-pay-banner" id="payment" aria-label="تجربة الدفع الفوري عبر Apple Pay">
           <div class="apple-pay-left">
             <button class="apple-pay-mark interactive-apple-pay" id="triggerApplePayBtn" type="button" aria-label="تجربة الدفع بـ Apple Pay">
-              <span class="apple-logo-icon"></span>Pay
+              <svg class="apple-svg" viewBox="0 0 170 170" width="20" height="20" fill="currentColor" aria-hidden="true">
+                <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.03-7.71-7.85-12.04-14.46-6.1-9.3-10.81-19.8-14.13-31.5-3.32-11.7-4.98-22.9-4.98-33.6 0-14.2 3.65-26 10.96-35.4 7.31-9.4 16.5-14.2 27.6-14.4 5.3 0 11.1 1.4 17.4 4.2 6.3 2.8 10.2 4.3 11.7 4.3 1.3 0 5.4-1.5 12.3-4.5 6.9-3 12.6-4.4 17.1-4.2 12.6.6 22.8 5.4 30.6 14.4-11 6.7-16.4 15.8-16.2 27.3.2 9 3.6 16.6 10.2 22.8 6.6 6.2 14.5 9.7 23.7 10.5-2.2 6.6-4.9 13.2-8.1 19.8zM119.22 31.85c0-7.7 2.8-15 8.4-21.9 5.6-6.9 12.4-10.7 20.4-11.4.1 1.2.2 2.2.2 3 0 7.8-3 15.3-9 22.5-6 7.2-13 11.2-21 12-.1-.9-.2-2-.2-4.2z"/>
+              </svg>
+              <span>Pay</span>
             </button>
             <span class="apple-pay-tooltip">اضغط لتجربة الدفع الفوري ⚡</span>
           </div>
           <div class="apple-pay-copy">
             <div class="apple-pay-tags">
-              <span class="apple-pay-kicker">تجربة الدفع الرقمي الفوري</span>
-              <span class="apple-pay-status-pill">مفعّل تجريبياً (Live Demo)</span>
+              <span class="apple-pay-kicker">دفع إلكتروني سريع</span>
+              <span class="apple-pay-status-pill">تجربة حية تفاعلية (Demo)</span>
             </div>
-            <h3>الدفع الذكي السريع عبر  Apple Pay</h3>
-            <p>تم إعداد وتجهيز واجهة الدفع لتوفير أسرع تجربة طلب بلمسة واحدة لرواد دكة الحجاز عبر أجهزة iPhone و Apple Watch. انقر على الزر لتجربة المحاكاة التفاعلية.</p>
+            <h3>الدفع بلمسة واحدة عبر Apple Pay</h3>
+            <p>تم تجهيز واجهة الدفع الرقمية بالكامل لدعم أجهزة iPhone و Apple Watch لخدمة عملاء دكة الحجاز بأعلى سرعة وسلاسة.</p>
           </div>
           <button type="button" class="btn btn-apple-demo" id="triggerApplePayAltBtn">
-            <span>تجربة الدفع الآن</span>
-            <span></span>
+            <svg class="apple-svg" viewBox="0 0 170 170" width="18" height="18" fill="currentColor" aria-hidden="true">
+              <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.03-7.71-7.85-12.04-14.46-6.1-9.3-10.81-19.8-14.13-31.5-3.32-11.7-4.98-22.9-4.98-33.6 0-14.2 3.65-26 10.96-35.4 7.31-9.4 16.5-14.2 27.6-14.4 5.3 0 11.1 1.4 17.4 4.2 6.3 2.8 10.2 4.3 11.7 4.3 1.3 0 5.4-1.5 12.3-4.5 6.9-3 12.6-4.4 17.1-4.2 12.6.6 22.8 5.4 30.6 14.4-11 6.7-16.4 15.8-16.2 27.3.2 9 3.6 16.6 10.2 22.8 6.6 6.2 14.5 9.7 23.7 10.5-2.2 6.6-4.9 13.2-8.1 19.8zM119.22 31.85c0-7.7 2.8-15 8.4-21.9 5.6-6.9 12.4-10.7 20.4-11.4.1 1.2.2 2.2.2 3 0 7.8-3 15.3-9 22.5-6 7.2-13 11.2-21 12-.1-.9-.2-2-.2-4.2z"/>
+            </svg>
+            <span>تجربة محاكاة الدفع</span>
           </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== THE EXPERIENCE & AMBIENCE ==================== -->
-    <section class="section experience-section" id="experience">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="section-tag">
-            <span class="tag-line"></span>
-            <span>03 · التجربة الاستثنائية</span>
-            <span class="tag-line"></span>
-          </div>
-          <h2 class="section-title text-light">
-            أكثر من مجرد فنجان قهوة..<br />
-            <em>لحظة تبقى في الذاكرة</em>
-          </h2>
-          <p class="section-subtitle text-muted-light">
-            صممنا كل زاوية لتمنحك شعور الهدوء والانسجام مع نبض جدة التاريخية.
-          </p>
-        </div>
-
-        <div class="experience-showcase-grid">
-          <div class="exp-box">
-            <div class="exp-box-visual">
-              <img src="assets/images/seating-heritage-view.jpg" alt="جلسات دكة الحجاز الداخلية المطلة على جدة التاريخية" loading="lazy" />
-              <div class="exp-overlay"></div>
-            </div>
-            <div class="exp-box-text">
-              <span class="exp-number">01</span>
-              <h3>جلسات داخلية مكيفة ودافئة</h3>
-              <p>إضاءات هادئة وديكورات مستوحاة من الأثاث الحجازي الخشبي تضمن لك الراحة والتركيز.</p>
-            </div>
-          </div>
-
-          <div class="exp-box">
-            <div class="exp-box-visual">
-              <img src="assets/images/seating-green-corner.jpg" alt="جلسة مضيئة بجوار نوافذ دكة الحجاز" loading="lazy" />
-              <div class="exp-overlay"></div>
-            </div>
-            <div class="exp-box-text">
-              <span class="exp-number">02</span>
-              <h3>زوايا خضراء بإضاءة طبيعية</h3>
-              <p>جلسات هادئة بجوار النوافذ، تجمع دفء الخشب والنباتات مع ضوء النهار المريح.</p>
-            </div>
-          </div>
-
-          <div class="exp-box">
-            <div class="exp-box-visual">
-              <img src="assets/images/seating-sunlit.jpg" alt="جلسات دكة الحجاز المضيئة المطلة على البلد" loading="lazy" />
-              <div class="exp-overlay"></div>
-            </div>
-            <div class="exp-box-text">
-              <span class="exp-number">03</span>
-              <h3>إطلالة على روح البلد</h3>
-              <p>نوافذ واسعة تطل على العمارة الحجازية وتمنح الجلسة هدوءاً وإضاءة جميلة طوال النهار.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== GALLERY & MOMENTS ==================== -->
-    <section class="section gallery-section" id="gallery">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-tag">
-            <span class="tag-line"></span>
-            <span>04 · المكان والإطلالات</span>
-          </div>
-          <div class="gallery-head-flex">
-            <div>
-              <h2 class="section-title">
-                جلسات <em>دكّة الحجاز</em>
-              </h2>
-              <p class="section-subtitle">
-                جولة بصرية في الجلسات والنوافذ والواجهة التراثية. انقر على أي صورة لتكبيرها.
-              </p>
-            </div>
-            <a href="https://www.instagram.com/dakatalhijazdk/" target="_blank" rel="noopener noreferrer" class="instagram-profile-link">
-              <span>📷 تابعنا على إنستغرام</span>
-              <b>@dakatalhijazdk ↗</b>
-            </a>
-          </div>
-        </div>
-
-        <div class="gallery-mosaic">
-          <figure class="mosaic-item item-tall" data-lightbox="assets/images/seating-heritage-view.jpg" data-caption="جلسات دكة الحجاز بإطلالة على قلب جدة التاريخية">
-            <img src="assets/images/seating-heritage-view.jpg" alt="جلسات دكة الحجاز بإطلالة على جدة التاريخية" loading="lazy" />
-            <div class="mosaic-overlay"><span class="zoom-icon">🔍</span><figcaption>إطلالة دافئة على قلب جدة التاريخية</figcaption></div>
-          </figure>
-          <figure class="mosaic-item" data-lightbox="assets/images/seating-green-corner.jpg" data-caption="زاوية خضراء مضيئة في دكة الحجاز">
-            <img src="assets/images/seating-green-corner.jpg" alt="زاوية جلسات خضراء ومضيئة في دكة الحجاز" loading="lazy" />
-            <div class="mosaic-overlay"><span class="zoom-icon">🔍</span><figcaption>زاوية خضراء يغمرها ضوء النهار</figcaption></div>
-          </figure>
-          <figure class="mosaic-item" data-lightbox="assets/images/cafe-heritage-facade.jpg" data-caption="واجهة دكة الحجاز في سوق العلوي">
-            <img src="assets/images/cafe-heritage-facade.jpg" alt="واجهة مقهى دكة الحجاز التراثية" loading="lazy" />
-            <div class="mosaic-overlay"><span class="zoom-icon">🔍</span><figcaption>واجهة دكة الحجاز في سوق العلوي</figcaption></div>
-          </figure>
-          <figure class="mosaic-item item-wide" data-lightbox="assets/images/arabic-coffee-pot.jpg" data-caption="القهوة العربية بروح الضيافة الحجازية">
-            <img src="assets/images/arabic-coffee-pot.jpg" alt="دلة القهوة العربية في دكة الحجاز" loading="lazy" />
-            <div class="mosaic-overlay"><span class="zoom-icon">🔍</span><figcaption>القهوة العربية بروح الضيافة الحجازية</figcaption></div>
-          </figure>
-          <figure class="mosaic-item" data-lightbox="assets/images/cafe-exterior-sign.jpg" data-caption="لافتة دكة الحجاز في قلب البلد">
-            <img src="assets/images/cafe-exterior-sign.jpg" alt="لافتة دكة الحجاز الخارجية في البلد" loading="lazy" />
-            <div class="mosaic-overlay"><span class="zoom-icon">🔍</span><figcaption>دكّة الحجاز في قلب البلد</figcaption></div>
-          </figure>
-          <figure class="mosaic-item" data-lightbox="assets/images/seating-sunlit.jpg" data-caption="جلسات داخلية هادئة تغمرها إضاءة النهار">
-            <img src="assets/images/seating-sunlit.jpg" alt="جلسات داخلية مشمسة في دكة الحجاز" loading="lazy" />
-            <div class="mosaic-overlay"><span class="zoom-icon">🔍</span><figcaption>جلسات هادئة يغمرها ضوء النهار</figcaption></div>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== CUSTOMER TESTIMONIALS ==================== -->
-    <section class="section reviews-section" id="reviews">
-      <div class="container">
-        <div class="section-header text-center">
-          <div class="section-tag">
-            <span class="tag-line"></span>
-            <span>05 · آراء رواد دكة الحجاز</span>
-            <span class="tag-line"></span>
-          </div>
-          <h2 class="section-title">
-            ماذا يقول <em>زوارنا الكرام</em>؟
-          </h2>
-          <p class="section-subtitle">
-            نعتز بكل كلمة ومشاركة.. آرائكم هي سر استمرارنا وتطورنا الدائم.
-          </p>
-        </div>
-
-        <div class="reviews-grid">
-          <!-- Review 1 -->
-          <div class="review-card">
-            <div class="review-header">
-              <div class="reviewer-avatar">س</div>
-              <div class="reviewer-info">
-                <h4>سلطان الغامدي</h4>
-                <div class="reviewer-stars">★★★★★</div>
-              </div>
-              <span class="review-badge">مرشد سياحي</span>
-            </div>
-            <p class="review-text">
-              "من أجمل وأروق المقاهي في منطقة البلد بجدة! الـ V60 عندهم كولومبي بنكهات متزنة جداً، والجلسة الخارجية في سوق العلوي بالمساء تجربة خيالية تأخذك لزمن الطيبين. تعامل الموظفين في قمة اللباقة والذوق."
-            </p>
-            <div class="review-date">زائر من خرائط جوجل · تم التحقق</div>
-          </div>
-
-          <!-- Review 2 -->
-          <div class="review-card featured">
-            <div class="review-header">
-              <div class="reviewer-avatar">ر</div>
-              <div class="reviewer-info">
-                <h4>رغد السليمان</h4>
-                <div class="reviewer-stars">★★★★★</div>
-              </div>
-              <span class="review-badge">عاشقة للقهوة المختصة</span>
-            </div>
-            <p class="review-text">
-              "كيكة التمر بالكراميل مع القهوة الحجازية شي لا يُعلى عليه! المكان يحافظ على الهوية الحجازية الأصلية بدون أي تكلف، وبنفس الوقت القهوة المختصة عندهم بمستوى مقاهي عالمية. شكراً لفريق دكة الحجاز على هذا الجمال."
-            </p>
-            <div class="review-date">زائرة متكررة · تم التحقق</div>
-          </div>
-
-          <!-- Review 3 -->
-          <div class="review-card">
-            <div class="review-header">
-              <div class="reviewer-avatar">م</div>
-              <div class="reviewer-info">
-                <h4>م. فيصل القرني</h4>
-                <div class="reviewer-stars">★★★★★</div>
-              </div>
-              <span class="review-badge">زائر من الرياض</span>
-            </div>
-            <p class="review-text">
-              "كل زيارة لجدة لازم أمر على دكة الحجاز. الكولد برو بارد ومنعش، والمكان داخل سوق العلوي فيه روح وحياة ما تلقاها في أي كافيه حديث. تجربة 10 من 10 بدون تردد."
-            </p>
-            <div class="review-date">زائر من خرائط جوجل · تم التحقق</div>
-          </div>
-        </div>
-
-        <!-- Google Reviews Action Banner -->
-        <div class="google-action-banner">
-          <div class="g-rating-box">
-            <span class="g-score">4.8</span>
-            <div>
-              <div class="g-stars">★★★★★</div>
-              <span class="g-reviews-count">بناءً على تقييمات الزوار الحقيقية</span>
-            </div>
-          </div>
-          <div class="g-action-text">
-            <h3>شاركتنا لحظتك الجميلة؟</h3>
-            <p>يسعدنا تقييمك لمقهى دكة الحجاز على خرائط جوجل ومشاركتنا صورك وتجربتك.</p>
-          </div>
-          <a href="https://www.google.com/maps/search/?api=1&query=%D8%AF%D9%83%D8%A9%20%D8%A7%D9%84%D8%AD%D8%AC%D8%A7%D8%B2%20%D8%AC%D8%AF%D8%A9" target="_blank" rel="noopener noreferrer" class="btn btn-luxury">
-            <span>⭐ قيّمنا على Google Maps ↗</span>
-          </a>
         </div>
       </div>
     </section>
@@ -1102,13 +883,13 @@
         <div class="section-header">
           <div class="section-tag">
             <span class="tag-line"></span>
-            <span>06 · زيارة دكة الحجاز</span>
+            <span>03 · موقعنا واستقبالكم</span>
           </div>
           <h2 class="section-title">
             نلتقي بك في <em>قلب البلد</em>
           </h2>
           <p class="section-subtitle">
-            سوق العلوي، جدة التاريخية — وجهتكم المفضلة للاستمتاع بأرقى فنجان قهوة.
+            سوق العلوي، حي البلد العتيق، جدة التاريخية — وجهتكم المفضلة للاستمتاع بأرقى جلسة وفنجان قهوة.
           </p>
         </div>
 
@@ -1124,16 +905,16 @@
               <p class="status-subline" id="liveSubline">أوقات العمل المعتمدة بتوقيت مكة المكرمة</p>
             </div>
 
-            <!-- Hours Table -->
+            <!-- Hours Schedule -->
             <div class="hours-schedule">
-              <h4 class="hours-title">ساعات العمل الرسمية — يومياً:</h4>
-              <div class="hours-row" id="rowJeddah">
-                <span class="day-name"><b>فرع جدة</b><small>سوق العلوي · البلد</small></span>
-                <span class="time-range">9:00 ص — 12:00 ص</span>
+              <h4 class="hours-title">ساعات العمل الرسمية:</h4>
+              <div class="hours-row" id="rowSatThu">
+                <span class="day-name">السبت — الخميس:</span>
+                <span class="time-range">9:00 صباحاً — 12:30 بعد منتصف الليل</span>
               </div>
-              <div class="hours-row" id="rowNamas">
-                <span class="day-name"><b>فرع النماص</b><small>النماص</small></span>
-                <span class="time-range">6:00 ص — 3:00 ص</span>
+              <div class="hours-row" id="rowFri">
+                <span class="day-name">يوم الجمعة:</span>
+                <span class="time-range">2:00 ظهراً — 12:30 بعد منتصف الليل</span>
               </div>
             </div>
 
@@ -1142,7 +923,7 @@
               <div class="contact-item">
                 <span class="contact-icon">📍</span>
                 <div>
-                  <strong>العنوان:</strong>
+                  <strong>العنوان في البلد:</strong>
                   <p>حي البلد، سوق العلوي العريق، جدة التاريخية، المملكة العربية السعودية</p>
                   <small class="plus-code">رمز الموقع السريع: F5MP+MX3 جدة</small>
                 </div>
@@ -1151,21 +932,13 @@
               <div class="contact-item">
                 <span class="contact-icon">📞</span>
                 <div>
-                  <strong>الهاتف والاتصال:</strong>
+                  <strong>الهاتف والاتصال المباشر:</strong>
                   <p><a href="tel:+966560742104" dir="ltr">+966 56 074 2104</a></p>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <span class="contact-icon">🚗</span>
-                <div>
-                  <strong>دليل المواقف:</strong>
-                  <p>تتوفر مواقف متعددة الطوابق بالقرب من باب مكة وبداية سوق العلوي مع مسار مشاة تاريخي ممتع حتى باب المقهى.</p>
                 </div>
               </div>
             </div>
 
-            <!-- Navigation Buttons -->
+            <!-- Navigation Buttons (With Vector SVGs - No broken glyphs!) -->
             <div class="directions-actions">
               <a href="https://www.google.com/maps/search/?api=1&query=F5MP%2BMX3%2C%20Souq%20Al%20Alawi%2C%20Jeddah" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-nav-map">
                 <span class="nav-map-icon">🗺️</span>
@@ -1173,7 +946,9 @@
                 <span>↗</span>
               </a>
               <a href="https://maps.apple.com/?q=Dakat+Al+Hijaz&ll=21.4883,39.1865&address=Souq+Al+Alawi,+Jeddah" target="_blank" rel="noopener noreferrer" class="btn btn-apple-maps">
-                <span class="apple-icon"></span>
+                <svg class="apple-svg" viewBox="0 0 170 170" width="18" height="18" fill="currentColor" aria-hidden="true">
+                  <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.03-7.71-7.85-12.04-14.46-6.1-9.3-10.81-19.8-14.13-31.5-3.32-11.7-4.98-22.9-4.98-33.6 0-14.2 3.65-26 10.96-35.4 7.31-9.4 16.5-14.2 27.6-14.4 5.3 0 11.1 1.4 17.4 4.2 6.3 2.8 10.2 4.3 11.7 4.3 1.3 0 5.4-1.5 12.3-4.5 6.9-3 12.6-4.4 17.1-4.2 12.6.6 22.8 5.4 30.6 14.4-11 6.7-16.4 15.8-16.2 27.3.2 9 3.6 16.6 10.2 22.8 6.6 6.2 14.5 9.7 23.7 10.5-2.2 6.6-4.9 13.2-8.1 19.8zM119.22 31.85c0-7.7 2.8-15 8.4-21.9 5.6-6.9 12.4-10.7 20.4-11.4.1 1.2.2 2.2.2 3 0 7.8-3 15.3-9 22.5-6 7.2-13 11.2-21 12-.1-.9-.2-2-.2-4.2z"/>
+                </svg>
                 <span>فتح في خرائط Apple Maps</span>
                 <span>↗</span>
               </a>
@@ -1184,8 +959,6 @@
           <div class="visual-map-panel">
             <div class="styled-map-card">
               <div class="map-bg-texture"></div>
-              
-              <!-- Compass Rose -->
               <div class="map-compass">🧭</div>
 
               <!-- Animated Pin at Destination -->
@@ -1211,7 +984,7 @@
               <div class="map-footer-coords">
                 <span>الإحداثيات: 21.4883° N, 39.1865° E</span>
                 <a href="https://www.google.com/maps/search/?api=1&query=F5MP%2BMX3%2C%20Souq%20Al%20Alawi%2C%20Jeddah" target="_blank" class="map-direct-link">
-                  بدء التوجيه الملاحي المباشر ↗
+                  بدء التوجيه المباشر ↗
                 </a>
               </div>
             </div>
@@ -1229,11 +1002,11 @@
         </div>
         <span class="cta-kicker">لحظتك القادمة في انتظارك</span>
         <h2 class="cta-title">
-          جاهز لتجربة قهوة ترتقي بذائقتك<br />
+          جاهز لتجربة قهوة وإطلالة تراثية<br />
           <em>في قلب أزقة جدة التاريخية؟</em>
         </h2>
         <p class="cta-desc">
-          تفضل بزيارتنا في سوق العلوي أو احجز طاولتك مسبقاً لتضمن لك ولأحبابك أفضل جلسة.
+          تفضل بزيارتنا في سوق العلوي أو احجز جلستك مسبقاً لتضمن أفضل طاولة بإطلالة الرواشين.
         </p>
         <div class="cta-actions">
           <button type="button" class="btn btn-luxury" id="finalBookBtn">
@@ -1264,22 +1037,22 @@
           </div>
         </a>
         <p class="footer-bio">
-          مقهى مختص مستوحى من روح جدة التاريخية وسوق العلوي العتيق. نجمع بين أصالة التراث الحجازي وأعلى معايير جودة القهوة المختصة لنصنع لك تجربة ترتقي بك في كل لحظة.
+          مقهى مختص مستوحى من روح جدة التاريخية وسوق العلوي العتيق. نجمع بين أصالة التراث الحجازي وإطلالات الرواشين ولذة القهوة المختصة والحلويات الطازجة.
         </p>
         <div class="footer-social-links">
-          <a href="https://www.instagram.com/dakatalhijazdk/" target="_blank" rel="noopener noreferrer" aria-label="حساب دكة الحجاز على إنستغرام" title="Instagram">
+          <a href="https://www.instagram.com/dakatalhijazdk/" target="_blank" rel="noopener noreferrer" title="Instagram">
             <span>📸 Instagram</span>
           </a>
-          <a href="https://tiktok.com/@dakatalhijaz" target="_blank" rel="noopener noreferrer" aria-label="حساب دكة الحجاز على تيك توك" title="TikTok">
+          <a href="https://tiktok.com/@dakatalhijaz" target="_blank" rel="noopener noreferrer" title="TikTok">
             <span>🎵 TikTok</span>
           </a>
-          <a href="https://www.snapchat.com/add/dakatalhijaz" target="_blank" rel="noopener noreferrer" aria-label="حساب دكة الحجاز على سناب شات" title="Snapchat">
+          <a href="https://www.snapchat.com/add/dakatalhijaz" target="_blank" rel="noopener noreferrer" title="Snapchat">
             <span>👻 Snapchat</span>
           </a>
-          <a href="https://linktr.ee/dakathijaaz" target="_blank" rel="noopener noreferrer" aria-label="رابط لينكتري الرسمي لدكة الحجاز" title="Linktree">
+          <a href="https://linktr.ee/dakathijaaz" target="_blank" rel="noopener noreferrer" title="Linktree">
             <span>🌲 Linktree</span>
           </a>
-          <a href="https://wa.me/966560742104" target="_blank" rel="noopener noreferrer" aria-label="محادثة واتساب" title="WhatsApp">
+          <a href="https://wa.me/966560742104" target="_blank" rel="noopener noreferrer" title="WhatsApp">
             <span>💬 WhatsApp</span>
           </a>
         </div>
@@ -1287,15 +1060,12 @@
 
       <!-- Col 2: Quick Links -->
       <div class="footer-col">
-        <h4 class="footer-title">استكشف دكة الحجاز</h4>
+        <h4 class="footer-title">روابط سريعة</h4>
         <ul class="footer-links">
           <li><a href="#top">الصفحة الرئيسية</a></li>
-          <li><a href="#story">حكايتنا وتراث المكان</a></li>
-          <li><a href="#menu">المنيو الرقمي التفاعلي</a></li>
-          <li><a href="#experience">تجربة الجلسات والضيافة</a></li>
-          <li><a href="#gallery">ألبوم الصور واللحظات</a></li>
-          <li><a href="#reviews">آراء وانطباعات الزوار</a></li>
-          <li><a href="#location">الموقع وخريطة الوصول</a></li>
+          <li><a href="#views">إطلالات وأجواء المكان</a></li>
+          <li><a href="#menu">منتجاتنا وقائمتنا الخاصة</a></li>
+          <li><a href="#location">الموقع وساعات العمل</a></li>
         </ul>
       </div>
 
@@ -1304,12 +1074,12 @@
         <h4 class="footer-title">ساعات العمل والزيارة</h4>
         <ul class="footer-info-list">
           <li>
-            <strong>فرع جدة · يومياً:</strong>
-            <span>9:00 صباحاً — 12:00 منتصف الليل</span>
+            <strong>السبت — الخميس:</strong>
+            <span>9:00 صباحاً — 12:30 بعد منتصف الليل</span>
           </li>
           <li>
-            <strong>فرع النماص · يومياً:</strong>
-            <span>6:00 صباحاً — 3:00 فجراً</span>
+            <strong>يوم الجمعة:</strong>
+            <span>2:00 ظهراً — 12:30 بعد منتصف الليل</span>
           </li>
           <li class="footer-status-item">
             <span class="pulse-indicator"></span>
@@ -1320,7 +1090,7 @@
 
       <!-- Col 4: Contact & Location -->
       <div class="footer-col">
-        <h4 class="footer-title">موقعنا والتواصل</h4>
+        <h4 class="footer-title">الموقع والتواصل</h4>
         <p class="footer-address">
           المملكة العربية السعودية، جدة التاريخية، حي البلد، سوق العلوي العتيق.
         </p>
@@ -1330,10 +1100,10 @@
         </p>
         <div class="footer-buttons">
           <a href="https://www.google.com/maps/search/?api=1&query=F5MP%2BMX3%2C%20Souq%20Al%20Alawi%2C%20Jeddah" target="_blank" class="btn btn-outline btn-sm">
-            <span>فتح الخريطة ↗</span>
+            <span>Google Maps ↗</span>
           </a>
           <button type="button" class="btn btn-primary btn-sm" id="footerBookBtn">
-            <span>طلب حجز طاولة 📅</span>
+            <span>حجز طاولة 📅</span>
           </button>
         </div>
       </div>
@@ -1347,13 +1117,17 @@
         <span>سوق العلوي، جدة التاريخية</span>
       </div>
       <div class="footer-attribution">
-        <span>صُممت هذه النسخة الرقمية الفاخرة لترتقي بالهوية التراثية لعروس البحر الأحمر ❤️</span>
+        <span>صُمم بحب وإتقان لعروس البحر الأحمر ❤️</span>
       </div>
     </div>
   </footer>
 
   <!-- ==================== STICKY MOBILE ACTION BAR ==================== -->
   <div class="mobile-sticky-bar" aria-label="إجراءات الجوال السريعة">
+    <a href="#views" class="mobile-bar-item">
+      <span class="bar-icon">🪟</span>
+      <span class="bar-text">الإطلالات</span>
+    </a>
     <a href="#menu" class="mobile-bar-item">
       <span class="bar-icon">☕</span>
       <span class="bar-text">المنيو</span>
@@ -1362,9 +1136,11 @@
       <span class="bar-icon">📅</span>
       <span class="bar-text">حجز جلسة</span>
     </button>
-    <a href="https://www.google.com/maps/search/?api=1&query=F5MP%2BMX3%2C%20Souq%20Al%20Alawi%2C%20Jeddah" target="_blank" class="mobile-bar-item">
-      <span class="bar-icon">📍</span>
-      <span class="bar-text">الموقع</span>
+    <a href="https://maps.apple.com/?q=Dakat+Al+Hijaz&ll=21.4883,39.1865&address=Souq+Al+Alawi,+Jeddah" target="_blank" class="mobile-bar-item">
+      <svg class="apple-svg" viewBox="0 0 170 170" width="16" height="16" fill="currentColor">
+        <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.03-7.71-7.85-12.04-14.46-6.1-9.3-10.81-19.8-14.13-31.5-3.32-11.7-4.98-22.9-4.98-33.6 0-14.2 3.65-26 10.96-35.4 7.31-9.4 16.5-14.2 27.6-14.4 5.3 0 11.1 1.4 17.4 4.2 6.3 2.8 10.2 4.3 11.7 4.3 1.3 0 5.4-1.5 12.3-4.5 6.9-3 12.6-4.4 17.1-4.2 12.6.6 22.8 5.4 30.6 14.4-11 6.7-16.4 15.8-16.2 27.3.2 9 3.6 16.6 10.2 22.8 6.6 6.2 14.5 9.7 23.7 10.5-2.2 6.6-4.9 13.2-8.1 19.8zM119.22 31.85c0-7.7 2.8-15 8.4-21.9 5.6-6.9 12.4-10.7 20.4-11.4.1 1.2.2 2.2.2 3 0 7.8-3 15.3-9 22.5-6 7.2-13 11.2-21 12-.1-.9-.2-2-.2-4.2z"/>
+      </svg>
+      <span class="bar-text">الخريطة</span>
     </a>
     <a href="https://wa.me/966560742104" target="_blank" class="mobile-bar-item whatsapp">
       <span class="bar-icon">💬</span>
@@ -1409,9 +1185,9 @@
           <div class="form-group">
             <label for="seatingPref">تفضيل مكان الجلسة</label>
             <select id="seatingPref" class="form-control">
-              <option value="جلسة خارجية في الدكة (سوق العلوي)" selected>جلسة خارجية في الدكة (سوق العلوي)</option>
-              <option value="جلسة داخلية مكيفة وهادئة">جلسة داخلية مكيفة وهادئة</option>
-              <option value="الأفضل حسب المتاح">الأفضل حسب المتاح فور الوصول</option>
+              <option value="جلسة بجوار نافذة الرواشين (المطلة على الزقاق)" selected>جلسة بجوار نافذة الرواشين (المطلة على الزقاق)</option>
+              <option value="جلسة داخلية هادئة بالركن الأخضر">جلسة داخلية هادئة بالركن الأخضر</option>
+              <option value="جلسة الدكة بالهواء الطلق (سوق العلوي)">جلسة الدكة بالهواء الطلق (سوق العلوي)</option>
             </select>
           </div>
         </div>
@@ -1428,8 +1204,8 @@
         </div>
 
         <div class="form-group">
-          <label for="specialNotes">ملاحظات أو مناسبة خاصة (اختياري)</label>
-          <textarea id="specialNotes" class="form-control" rows="2" placeholder="أي تفاصيل ترغب بمشاركتها معنا (عيد ميلاد، ذكرى، طلب قهوة مسبق...)"></textarea>
+          <label for="specialNotes">ملاحظات أو طلبات خاصة (اختياري)</label>
+          <textarea id="specialNotes" class="form-control" rows="2" placeholder="أي تفاصيل أو طلب مسبق لحلويات الدكة..."></textarea>
         </div>
 
         <div class="modal-actions">
@@ -1445,12 +1221,15 @@
     </div>
   </div>
 
-  <!-- ==================== APPLE PAY DEMO MODAL ==================== -->
+  <!-- ==================== APPLE PAY DEMO MODAL (WITH SVG LOGO!) ==================== -->
   <div class="modal-overlay" id="applePayModal" aria-hidden="true" role="dialog" aria-labelledby="applePayTitle">
     <div class="modal-dialog apple-pay-dialog">
       <div class="apple-pay-sheet-header">
         <div class="apple-pay-logo">
-          <span class="apple-logo-icon"></span>Pay
+          <svg class="apple-svg" viewBox="0 0 170 170" width="22" height="22" fill="currentColor" aria-hidden="true">
+            <path d="M150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.19-2.12-9.97-3.17-14.34-3.17-4.58 0-9.49 1.05-14.75 3.17-5.26 2.13-9.5 3.24-12.74 3.35-4.35.13-9.16-1.9-14.42-6.08-3.7-3.03-7.71-7.85-12.04-14.46-6.1-9.3-10.81-19.8-14.13-31.5-3.32-11.7-4.98-22.9-4.98-33.6 0-14.2 3.65-26 10.96-35.4 7.31-9.4 16.5-14.2 27.6-14.4 5.3 0 11.1 1.4 17.4 4.2 6.3 2.8 10.2 4.3 11.7 4.3 1.3 0 5.4-1.5 12.3-4.5 6.9-3 12.6-4.4 17.1-4.2 12.6.6 22.8 5.4 30.6 14.4-11 6.7-16.4 15.8-16.2 27.3.2 9 3.6 16.6 10.2 22.8 6.6 6.2 14.5 9.7 23.7 10.5-2.2 6.6-4.9 13.2-8.1 19.8zM119.22 31.85c0-7.7 2.8-15 8.4-21.9 5.6-6.9 12.4-10.7 20.4-11.4.1 1.2.2 2.2.2 3 0 7.8-3 15.3-9 22.5-6 7.2-13 11.2-21 12-.1-.9-.2-2-.2-4.2z"/>
+          </svg>
+          <span>Pay</span>
         </div>
         <button type="button" class="modal-close" id="applePayCloseBtn" aria-label="إغلاق نافذة الدفع">✕</button>
       </div>
@@ -1481,7 +1260,7 @@
           <b>20.00 ر.س</b>
         </div>
         <div class="pay-item-row total-row">
-          <span>الإجمالي النهائي للدفع:</span>
+          <span>الإجمالي للدفع:</span>
           <span class="total-price">48.00 ر.س</span>
         </div>
       </div>
@@ -1489,7 +1268,7 @@
       <div class="apple-pay-card-selector">
         <div class="card-icon">💳</div>
         <div class="card-details">
-          <strong>بطاقة مدى (Mada) الإئتمانية</strong>
+          <strong>بطاقة مدى (Mada)</strong>
           <span>مصرف الراجحي ···· 4821</span>
         </div>
         <span class="card-check">✓</span>
@@ -1502,7 +1281,7 @@
             <span>تأكيد الدفع التجريبي (Touch ID / Face ID)</span>
           </button>
           <p class="apple-pay-disclaimer">
-            🔒 محاكاة حية لتجربة Apple Pay جاهزة للربط والإنتاج المباشر عبر بوابة الدفع (Moyasar).
+            🔒 محاكاة حية لتجربة Apple Pay جاهزة للربط مع بوابة الدفع (Moyasar).
           </p>
         </div>
 
@@ -1523,7 +1302,7 @@
     </div>
   </div>
 
-  <!-- ==================== LIGHTBOX MODAL ==================== -->
+  <!-- ==================== FULLSCREEN LIGHTBOX MODAL ==================== -->
   <div class="lightbox-modal" id="lightboxModal" aria-hidden="true">
     <button class="lightbox-close" id="lightboxClose" aria-label="إغلاق الصورة">✕</button>
     <div class="lightbox-content">

@@ -6,6 +6,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initScrollEffects();
   initLiveWorkingHours();
+  initViewsStage();
   initMenuFilters();
   initReservationModal();
   initApplePayDemo();
@@ -108,11 +109,101 @@ function initLiveWorkingHours() {
 }
 
 /* --------------------------------------------------------------------------
-   3. Interactive Filterable Digital Menu
+   3. Views & Ambience Showcase Interactive Stage
+   -------------------------------------------------------------------------- */
+function initViewsStage() {
+  const viewCards = document.querySelectorAll('.view-card');
+  const stageMainImage = document.getElementById('stageMainImage');
+  const stageTitle = document.getElementById('stageTitle');
+  const stageDesc = document.getElementById('stageDesc');
+  const stageBadge = document.getElementById('stageBadge');
+  const stageZoomBtn = document.getElementById('stageZoomBtn');
+  const stageBookSeatBtn = document.getElementById('stageBookSeatBtn');
+  const reservationModal = document.getElementById('reservationModal');
+  const seatingPref = document.getElementById('seatingPref');
+
+  let currentImgUrl = 'assets/images/seating-heritage-view.jpg';
+  let currentCaption = 'إطلالة الرواشين على زقاق سوق العلوي';
+
+  viewCards.forEach(card => {
+    card.addEventListener('click', () => {
+      viewCards.forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
+
+      const imgUrl = card.getAttribute('data-img');
+      const title = card.getAttribute('data-title');
+      const desc = card.getAttribute('data-desc');
+      const badge = card.getAttribute('data-badge');
+
+      currentImgUrl = imgUrl;
+      currentCaption = title;
+
+      if (stageMainImage) {
+        stageMainImage.style.opacity = '0';
+        stageMainImage.style.transform = 'scale(0.98)';
+        setTimeout(() => {
+          stageMainImage.src = imgUrl;
+          stageMainImage.alt = title;
+          stageMainImage.style.opacity = '1';
+          stageMainImage.style.transform = 'scale(1)';
+        }, 180);
+      }
+
+      if (stageTitle) stageTitle.textContent = title;
+      if (stageDesc) stageDesc.textContent = desc;
+      if (stageBadge) stageBadge.textContent = badge;
+    });
+  });
+
+  if (stageZoomBtn) {
+    stageZoomBtn.addEventListener('click', () => {
+      const lightbox = document.getElementById('lightboxModal');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+      if (lightbox && lightboxImg) {
+        lightboxImg.src = currentImgUrl;
+        if (lightboxCaption) lightboxCaption.textContent = currentCaption;
+        lightbox.classList.add('open');
+        lightbox.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  }
+
+  if (stageBookSeatBtn) {
+    stageBookSeatBtn.addEventListener('click', () => {
+      if (reservationModal) {
+        if (seatingPref) {
+          seatingPref.value = 'جلسة بجوار نافذة الرواشين (المطلة على الزقاق)';
+        }
+        reservationModal.classList.add('open');
+        reservationModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. Interactive Filterable Digital Menu
    -------------------------------------------------------------------------- */
 function initMenuFilters() {
   const filterTabs = document.querySelectorAll('.filter-tab');
   const menuCards = document.querySelectorAll('.menu-card');
+
+  function applyCategoryFilter(targetCategory) {
+    menuCards.forEach(card => {
+      const cardCategoryStr = card.getAttribute('data-category') || '';
+      const cardCategories = cardCategoryStr.split(' ');
+      
+      if (targetCategory === 'all' || cardCategories.includes(targetCategory)) {
+        card.style.display = 'flex';
+        card.style.animation = 'fadeIn 0.35s ease';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
 
   filterTabs.forEach(tab => {
     tab.addEventListener('click', () => {
@@ -126,18 +217,15 @@ function initMenuFilters() {
       tab.classList.add('active');
       tab.setAttribute('aria-selected', 'true');
 
-      // Filter cards with smooth fade
-      menuCards.forEach(card => {
-        const cardCategory = card.getAttribute('data-category');
-        if (targetCategory === 'all' || cardCategory === targetCategory) {
-          card.style.display = 'flex';
-          card.style.animation = 'fadeIn 0.4s ease';
-        } else {
-          card.style.display = 'none';
-        }
-      });
+      applyCategoryFilter(targetCategory);
     });
   });
+
+  // Apply default active tab on load (Our Real Products first!)
+  const activeTab = document.querySelector('.filter-tab.active');
+  if (activeTab) {
+    applyCategoryFilter(activeTab.getAttribute('data-category'));
+  }
 }
 
 /* --------------------------------------------------------------------------
