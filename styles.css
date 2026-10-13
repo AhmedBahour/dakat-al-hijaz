@@ -1556,8 +1556,9 @@ a:hover .apple-svg {
   color: var(--cream-200);
 }
 
-/* Luxury Interactive Apple Pay Banner */
+/* Luxury Interactive Apple Pay Banner (Hidden Temporarily) */
 .apple-pay-banner {
+  display: none !important;
   margin-top: 32px;
   padding: 26px 32px;
   display: flex;
